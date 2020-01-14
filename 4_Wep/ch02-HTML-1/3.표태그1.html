@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table{
+            background-color:black;
+        }
+        tr{ 
+            background-color:white; 
+        }
+        tr:hover{
+            background-color:orange;
+        }
+        td, th{
+            text-align:center;
+            font-size:9px;
+            caption-side{
+                            font-size:20px;
+                        }
+        }
+    </style>
+</head>
+<body>
+    <table> <!--th는 그냥 열 td는 헤더 진하게,가운데정렬-->
+        <caption>표제목</caption>
+        <tr>
+            <th>1행1열</th> <td>1행2열</td> <td colspan="2">1행3열,4열</td> 
+        </tr>
+        <tr>
+            <td rowspan="2">2행1열</td><td colspan="3">2행2열,3열,4열</td>
+        </tr>
+        <tr>
+            <td>3행2열</td><td>3행3열</td><td>3행4열</td>
+        </tr>
+        <tr>
+            <td>4행1열</td><td>4행2열</td><td>4행3열</td><td>4행4열</td>
+        </tr>
+    </table>
+</body>
+</html>
