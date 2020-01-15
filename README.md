@@ -5,3 +5,4 @@ Today I Learned
 [2.HTML_02.form](https://github.com/kha0213/Today-I-Learn/wiki/HTML_02.form)<br>
 [3.HTML_03.layout](https://github.com/kha0213/Today-I-Learn/wiki/HTML_03.layout)<br>
 [4.CSS_01.selector](https://github.com/kha0213/Today-I-Learn/wiki/CSS_01.selector)<br>
+[4.CSS_02.layout](https://github.com/kha0213/Today-I-Learn/wiki/CSS_02.layout)<br>
