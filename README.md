@@ -6,4 +6,5 @@ Today I Learned
 [3.HTML_03.layout](https://github.com/kha0213/Today-I-Learn/wiki/HTML_03.layout)<br>
 [4.CSS_01.selector](https://github.com/kha0213/Today-I-Learn/wiki/CSS_01.selector)<br>
 [5.CSS_02.layout](https://github.com/kha0213/Today-I-Learn/wiki/CSS_02.layout)<br>
-[5.CSS_03.flex](https://github.com/kha0213/Today-I-Learn/wiki/CSS_03.flex)<br>
+[6.CSS_03.flex](https://github.com/kha0213/Today-I-Learn/wiki/CSS_03.flex)<br>
+[7.CSS_04.background](https://github.com/kha0213/Today-I-Learn/wiki/CSS_04.background)<br>
