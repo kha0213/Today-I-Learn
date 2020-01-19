@@ -11,3 +11,4 @@ Today I Learned
 [7.CSS_04.background](https://github.com/kha0213/Today-I-Learn/wiki/CSS_04.background)<br>
 [8.CSS_05.filter, transform](https://github.com/kha0213/Today-I-Learn/wiki/CSS_05.filter,-transform)<br>
 [9.CSS_06.transition](https://github.com/kha0213/Today-I-Learn/wiki/CSS_06.transition)<br>
+[10.CSS_07.fontello](https://github.com/kha0213/Today-I-Learn/wiki/CSS_07.fontello)<br>
