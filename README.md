@@ -13,4 +13,4 @@ Today I Learned
 [9.CSS_06.transition](https://github.com/kha0213/Today-I-Learn/wiki/CSS_06.transition)<br>
 [10.CSS_07.fontello](https://github.com/kha0213/Today-I-Learn/wiki/CSS_07.fontello)<br>
 [11.CSS_08.media_query](https://github.com/kha0213/Today-I-Learn/wiki/CSS_08.media_query)<br>
-[12.](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_01.event)<br>
+[12.JavaScript_01.event](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_01.event)<br>
