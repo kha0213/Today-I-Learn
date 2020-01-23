@@ -15,4 +15,5 @@ Today I Learned
 [11.CSS_08.media_query](https://github.com/kha0213/Today-I-Learn/wiki/CSS_08.media_query)<br>
 [12.JavaScript_01.event](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_01.event)<br>
 [13.JavaScript_02.document](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_02.document)<br>
-[13.JavaScript_03.function](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_03.function)<br>
+[14.JavaScript_03.function](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_03.function)<br>
+[15.JavaScript_04.timer](https://github.com/kha0213/Today-I-Learn/wiki/200124-JavaScript_04.timer)<br>
