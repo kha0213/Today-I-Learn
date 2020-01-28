@@ -18,3 +18,4 @@ Today I Learned
 [14.JavaScript_03.function](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_03.function)<br>
 [15.JavaScript_04.timer](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_04.timer)<br>
 [16.JavaScript_05.object](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_05.object)<br>
+[17.Regular_Expression_01.with_javascript](https://github.com/kha0213/Today-I-Learn/wiki/Regular_Expression_01.with_javascript)<br>
