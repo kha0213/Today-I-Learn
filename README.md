@@ -22,6 +22,7 @@ Today I Learned
 [18.JavaScript_06.Standard_Built-in_Object](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_06.Standard_Built-in_Object)<br>
 [19.JavaScript_07.window_object](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_07.window_object)<br>
 ## JSP공부<br>
-[JSP_01.mapping](https://github.com/kha0213/Today-I-Learn/wiki/200124-JSP_01.mapping)<br>
+[JSP_01.mapping](https://github.com/kha0213/Today-I-Learn/wiki/JSP_01.mapping)<br>
+[JSP_02.request_response](https://github.com/kha0213/Today-I-Learn/wiki/JSP_02.request_response)<br>
 ## AndroidStudio공부<br>
 [1.AndroidStudio_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/AndroidStudio_01.new_project)<br>
