@@ -26,5 +26,6 @@ Today I Learned
 [JSP_02.request_response](https://github.com/kha0213/Today-I-Learn/wiki/JSP_02.request_response)<br>
 [JSP_03.ServletLifeCycle](https://github.com/kha0213/Today-I-Learn/wiki/JSP_03.ServletLifeCycle)<br>
 [JSP_04.form_control](https://github.com/kha0213/Today-I-Learn/wiki/JSP_04.form_control)<br>
+[JSP_05.JSP_script](https://github.com/kha0213/Today-I-Learn/wiki/JSP_05.JSP_script)<br>
 ## AndroidStudio공부<br>
 [1.AndroidStudio_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/AndroidStudio_01.new_project)<br>
