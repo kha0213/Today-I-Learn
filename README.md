@@ -28,5 +28,6 @@ Today I Learned
 [JSP_04.form_control](https://github.com/kha0213/Today-I-Learn/wiki/JSP_04.form_control)<br>
 [JSP_05.JSP_script](https://github.com/kha0213/Today-I-Learn/wiki/JSP_05.JSP_script)<br>
 [JSP_06.context_paramete](https://github.com/kha0213/Today-I-Learn/wiki/JSP_06.context_parameter)<br>
+[JSP_07.JSP_inner_object](https://github.com/kha0213/Today-I-Learn/wiki/JSP_07.JSP_inner_object)<br>
 ## AndroidStudio공부<br>
 [1.AndroidStudio_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/AndroidStudio_01.new_project)<br>
