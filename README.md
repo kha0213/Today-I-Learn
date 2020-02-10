@@ -31,5 +31,8 @@ Today I Learned
 [JSP_07.JSP_inner_object](https://github.com/kha0213/Today-I-Learn/wiki/JSP_07.JSP_inner_object)<br>
 [JSP_08.Cookie](https://github.com/kha0213/Today-I-Learn/wiki/JSP_08.Cookie)<br>
 [JSP_09.Session](https://github.com/kha0213/Today-I-Learn/wiki/JSP_09.Session)<br>
+[JSP_10.ErrorPage](https://github.com/kha0213/Today-I-Learn/wiki/JSP_10.ErrorPage)<br>
+[JSP_11.JavaBean](https://github.com/kha0213/Today-I-Learn/wiki/JSP_11.JavaBean)<br>
+
 ## AndroidStudio공부<br>
 [1.AndroidStudio_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/AndroidStudio_01.new_project)<br>
