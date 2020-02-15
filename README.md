@@ -34,6 +34,6 @@ Today I Learned
 [JSP_10.ErrorPage](https://github.com/kha0213/Today-I-Learn/wiki/JSP_10.ErrorPage)<br>
 [JSP_11.JavaBean](https://github.com/kha0213/Today-I-Learn/wiki/JSP_11.JavaBean)<br>
 [JSP_13.DAO_DTO_VO](https://github.com/kha0213/Today-I-Learn/wiki/JSP_13.DAO_DTO_VO)<br>
-
+[JSP_14.JDBC](https://github.com/kha0213/Today-I-Learn/wiki/JSP_14.JDBC)<br>
 ## AndroidStudio공부<br>
 [1.AndroidStudio_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/AndroidStudio_01.new_project)<br>
