@@ -37,5 +37,5 @@ Today I Learned
 [JSP_14.JDBC](https://github.com/kha0213/Today-I-Learn/wiki/JSP_14.JDBC)<br>
 [JSP_15.file_upload](https://github.com/kha0213/Today-I-Learn/wiki/JSP_15.file_upload)<br>
 [JSP_16.EL(Expression_Language)](https://github.com/kha0213/Today-I-Learn/wiki/JSP_16.EL(Expression_Language))<br>
-## AndroidStudio공부<br>
-[1.AndroidStudio_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/AndroidStudio_01.new_project)<br>
+## Android공부<br>
+[1.Android_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/Android_01.new_project)<br>
