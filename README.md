@@ -39,5 +39,7 @@ Today I Learned
 [JSP_16.EL(Expression_Language)](https://github.com/kha0213/Today-I-Learn/wiki/JSP_16.EL(Expression_Language))<br>
 [JSP_17.JSTL(JSP_standard_Tag_Library)](https://github.com/kha0213/Today-I-Learn/wiki/JSP_17.JSTL(JSP_standard_Tag_Library))<br>
 [JSP_18.FrontController_Command](https://github.com/kha0213/Today-I-Learn/wiki/JSP_18.FrontController_Command)<br>
+## JQuery공부<br>
+[JQuery_01.hide_show](https://github.com/kha0213/Today-I-Learn/wiki/JQuery_01.hide_show)<br>
 ## Android공부<br>
 [1.Android_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/Android_01.new_project)<br>
