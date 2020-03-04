@@ -41,5 +41,7 @@ Today I Learned
 [JSP_18.FrontController_Command](https://github.com/kha0213/Today-I-Learn/wiki/JSP_18.FrontController_Command)<br>
 ## JQuery공부<br>
 [JQuery_01.start_selector](https://github.com/kha0213/Today-I-Learn/wiki/JQuery_01.start_selector)<br>
+[JQuery_02.chain_traversing](https://github.com/kha0213/Today-I-Learn/wiki/JQuery_02.chain_traversing)<br>
+[JQuery_03.function](https://github.com/kha0213/Today-I-Learn/wiki/JQuery_03.function)<br>
 ## Android공부<br>
 [1.Android_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/Android_01.new_project)<br>
