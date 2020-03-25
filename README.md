@@ -21,6 +21,8 @@ Today I Learned
 [17.Regular_Expression_01.with_javascript](https://github.com/kha0213/Today-I-Learn/wiki/Regular_Expression_01.with_javascript)<br>
 [18.JavaScript_06.Standard_Built-in_Object](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_06.Standard_Built-in_Object)<br>
 [19.JavaScript_07.window_object](https://github.com/kha0213/Today-I-Learn/wiki/JavaScript_07.window_object)<br>
+## Spring공부<br>
+[Spring_01.DI](https://github.com/kha0213/Today-I-Learn/wiki/Spring_01.DI)<br>
 ## JSP공부<br>
 [JSP_01.mapping](https://github.com/kha0213/Today-I-Learn/wiki/JSP_01.mapping)<br>
 [JSP_02.request_response](https://github.com/kha0213/Today-I-Learn/wiki/JSP_02.request_response)<br>
