@@ -27,6 +27,8 @@ Today I Learned
 [Spring_03.Maven_(pom.xml)](https://github.com/kha0213/Today-I-Learn/wiki/Spring_03.Maven_(pom.xml))<br>
 [Spring_03.IoC](https://github.com/kha0213/Today-I-Learn/wiki/Spring_03.IoC)<br>
 [Spring_04.file_config](https://github.com/kha0213/Today-I-Learn/wiki/Spring_04.%EC%99%B8%EB%B6%80-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%84%A4%EC%A0%95)<br>
+[Spring_05.AOP](https://github.com/kha0213/Today-I-Learn/wiki/Spring_05.AOP)<br>
+[Spring_06.korean(한글설정)](https://github.com/kha0213/Today-I-Learn/wiki/Spring_06.korean)<br>
 ## JSP공부<br>
 [JSP_01.mapping](https://github.com/kha0213/Today-I-Learn/wiki/JSP_01.mapping)<br>
 [JSP_02.request_response](https://github.com/kha0213/Today-I-Learn/wiki/JSP_02.request_response)<br>
