@@ -38,6 +38,7 @@ Today I Learned
 [Spring_13.JDBC](https://github.com/kha0213/Today-I-Learn/wiki/Spring_13.JDBC)<br>
 [Spring_14.File_up_load](https://github.com/kha0213/Today-I-Learn/wiki/Spring_14.File_up_load)<br>
 [Spring_15.mailSender](https://github.com/kha0213/Today-I-Learn/wiki/Spring_15.mailSender)<br>
+[Spring_16.mybatis](https://github.com/kha0213/Today-I-Learn/wiki/Spring_16.mybatis)<br>
 ## JSP공부<br>
 [JSP_01.mapping](https://github.com/kha0213/Today-I-Learn/wiki/JSP_01.mapping)<br>
 [JSP_02.request_response](https://github.com/kha0213/Today-I-Learn/wiki/JSP_02.request_response)<br>
