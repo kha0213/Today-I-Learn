@@ -23,7 +23,7 @@ public class Ex09 {
 		// 사용자 입력 값을 원하는 값으로 분리
 		String[] circle = userCircle.split(" ");
 		String[] point = userPoint.split(" ");
-		
+
 		// 각각의 String을 double로 변환
 		double circleX1 = Double.parseDouble(circle[0]);
 		double circleY1 = Double.parseDouble(circle[1]);
@@ -46,12 +46,6 @@ public class Ex09 {
 		System.out.println("반지름 제곱 : " + Math.pow(radius, 2));
 		System.out.println("중심사이의 거리 제곱 : " + (Math.pow(pointX1-circleX1, 2) + Math.pow(pointY1-circleY1, 2)));
 		
-		if (Math.pow(radius, 2) > Math.pow(pointX1-circleX1, 2) + Math.pow(pointY1-circleY1, 2) ) {
-			return true;
-		} else {
-			return false;
-		}
-		
-		// return Math.pow(radius, 2) > Math.pow(pointX1-circleX1, 2) + Math.pow(pointY1-circleY1, 2);
+		return Math.pow(radius, 2) > Math.pow(pointX1-circleX1, 2) + Math.pow(pointY1-circleY1, 2);
 	}
 }

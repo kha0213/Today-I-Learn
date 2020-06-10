@@ -57,10 +57,6 @@ public class Ex10 {
 		System.out.println("반지름 차 : "+radiusMinus);
 		System.out.println("반지름 합 : "+radiusPlus);
 		
-		if(radiusMinus <= pointDistance && pointDistance <= radiusPlus) {
-			return true;
-		} else {
-			return false;
-		}
+		return radiusMinus <= pointDistance && pointDistance <= radiusPlus;
 	}
 }

@@ -41,7 +41,8 @@ public class Ex08 {
 		}
 
 		sc.close();
-
+		
+		
 		if (inputNumber) {
 			int cnt = 0;
 			if (inRect(userX1, userY1, 100, 100, 200, 200)) {
@@ -50,7 +51,10 @@ public class Ex08 {
 			if (inRect(userX2, userY2, 100, 100, 200, 200)) {
 				cnt++;
 			}
-			System.out.println(cnt > 0 ? "충돌입니다." : "충돌이 아닙니다.");
+			if (overRap(userX1, userY1, 100, 100, 200, 200) || overRap(userX2, userY2, 100, 100, 200, 200)) {
+				cnt = 1;
+			}
+			System.out.println(cnt == 1  ? "충돌입니다." : "충돌이 아닙니다.");
 		}
 	}
 
