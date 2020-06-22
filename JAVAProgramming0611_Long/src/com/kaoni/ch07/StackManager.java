@@ -18,7 +18,7 @@ public class StackManager {
 		MyStack<String> stack = new MyStack<String>();
 		while(true) {
 			System.out.println("-------------------------------------------------------------------------------------------");
-			System.out.println("스택 구현 연습입니다. 원하시는 기능을 선택해주세요. | 1.push | 2.pop | 3.peek | 4.StackInfo | 그 외 : 종료");
+			System.out.println("스택 구현 연습입니다. 원하시는 기능을 선택해주세요. | 1.push | 2.pop | 3.peek | 4.StackAllPop | 그 외 : 종료");
 			System.out.println("-------------------------------------------------------------------------------------------");
 			int userCommand = userCommand();
 			execute(userCommand, stack);
@@ -35,7 +35,7 @@ public class StackManager {
 		try {
 			userCommand = sc.nextInt();
 		} catch (Exception e) {
-			e.printStackTrace();
+			execute(EXIT, null); // 숫자 입력 안했을 때 종료
 		}
 		return userCommand;
 	}
@@ -50,7 +50,7 @@ public class StackManager {
 			break;
 		case 3: doPeek(stack);
 			break;
-		case 4: doStackInfo(stack);
+		case 4: doStackAllPop(stack);
 			break;
 		default:
 			System.out.println("시스템을 종료합니다.");
@@ -99,12 +99,11 @@ public class StackManager {
 	
 	
 	// stackInfo 명령
-	private void doStackInfo(MyStack<String> stack) {
+	private void doStackAllPop(MyStack<String> stack) {
 		System.out.println("스택 정보 보기 입니다. 스택 개수는 총 "+stack.getTop()+"개 이고 모든 자료를 위에서부터 순차적으로 꺼내겠습니다.");
 		int count = 1;
-		MyStack<String> tempStack = stack;
 		while(true) {
-			String tempStr = tempStack.pop();
+			String tempStr = stack.pop();
 			if(tempStr == null) { // 스택에 저장된 값이 없을 때
 				System.out.println("이상 모든 자료입니다.");
 				break;

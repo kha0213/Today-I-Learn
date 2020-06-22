@@ -11,7 +11,7 @@ package com.kaoni.ch07;
  */
 public class MyStack<T> implements IStack<T> {
 	private T[] myStackArr;
-	private int top; // 스택안의 자료 갯수
+	private int top; // 스택안의 자료 갯수 
 	
 	
 	public MyStack() {
@@ -26,6 +26,7 @@ public class MyStack<T> implements IStack<T> {
 		return myStackArr[top-1];
 	}
 	
+	// pop다시 찾아보기 
 	@Override
 	public T pop() {
 		if(top == 0) {
@@ -43,7 +44,7 @@ public class MyStack<T> implements IStack<T> {
 		return returnObj;
 	}
 	
-	
+	// push, 
 	@Override
 	public void push(T ob) {
 		T[] newArr = (T[]) new Object[top+1];

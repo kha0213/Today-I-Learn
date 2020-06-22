@@ -3,17 +3,17 @@ package com.kaoni.ch06;
 import java.util.Arrays;
 
 public class EnglishHistogram {
-	private final int ALPHABET_COUNT = 26;
-	private final int CHAR_TO_INT = 97;
-	private final int CHAR_SPACE = -65;
+	private final int ALPHABET_COUNT = 26; //상수 찾아보기
+	private final int CHAR_TO_INT = 97; // 'a' 97
+	private final int CHAR_SPACE = 65; 
 	
-	
-	public int[] stringToIntArray(String longText) {
-		int[] histogram = new int[ALPHABET_COUNT];
+	// charLowerA
+	public int[] stringToIntArray(String longText) { // 영문, 스페이스
+		int[] histogram = new int[ALPHABET_COUNT]; // a~z
 		StringBuilder sb = new StringBuilder(longText.toLowerCase());
 		for(int i=0;i<sb.length();i++) {
-			if(sb.charAt(i)-CHAR_TO_INT != CHAR_SPACE) { // 띄어쓰기 제외
-				histogram[sb.charAt(i)-CHAR_TO_INT]++;
+			if(CHAR_TO_INT - sb.charAt(i) != CHAR_SPACE) { // 띄어쓰기 제외
+				histogram[sb.charAt(i)-CHAR_TO_INT]++; // a = 0 b = 1
 			}
 		}
 		

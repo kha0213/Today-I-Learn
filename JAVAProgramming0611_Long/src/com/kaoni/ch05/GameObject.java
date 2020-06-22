@@ -15,11 +15,11 @@ public abstract class GameObject {
 	protected int x; // 현재 위치(화면 맵 상의 위치)
 	protected int y; // 현재 위치(화면 맵 상의 위치)
 
-	public boolean collide(GameObject p) {
+	public boolean collide(GameObject p) { // bearCatch 사냥
 		return this.x == p.getX() && this.y == p.getY();
 	}
 	
-	public void move(char command) {
+	public void move(char command) { // w a s d
 		switch (command) {
 		case GameConstant.UP: 
 			x = Math.max(x-distance, GameConstant.MIN_COORDINATE); // 최솟값 0

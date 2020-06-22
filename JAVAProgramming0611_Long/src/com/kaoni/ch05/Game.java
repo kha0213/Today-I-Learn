@@ -13,7 +13,7 @@ public class Game {
 	
 	
 	private Bear bear; // 곰 객체
-	private Fish fish; // 생선 객체
+	private Fish fish; // 물고기 객체
 	private int movingCount; // 이동한 횟수
 	
 	public Game() {
@@ -28,10 +28,12 @@ public class Game {
 		System.out.println("곰 위치 : "+bear.x+","+bear.y);
 		System.out.println("물고기 위치 : "+fish.x+","+fish.y);
 		while(true) {
-			printCoordinate();
-			bear.movingRule();
+			printCoordinate(); // 좌표 출력 + 네모칸
+			bear.movingRule(); // 이해하기 쉽게 메소드
 			fish.movingRule();
+			// checkLoca ->> 사냥
 			if(checkLocation() == GameConstant.MISSION_COMPLETE) {
+				System.out.println("성공하셨습니다! 곰이 물고기를 잡았습니다. \nplay횟수 : "+movingCount+"번");
 				System.out.println("프로그램을 종료합니다. 감사합니다");
 				break;
 			}
@@ -39,7 +41,7 @@ public class Game {
 	}
 	
 	// 좌표 출력
-	private void printCoordinate() {
+	private void printCoordinate() { // 프린트 게임보드, draw게임보드 
 		for(int i=0; i < 20; i++) {
 			for(int j=0; j < 20; j++) {
 				if(fish.x == i && fish.y == j) {
@@ -60,7 +62,6 @@ public class Game {
 	// 좌표 체크
 	public boolean checkLocation() {
 		if (bear.collide(fish)) {
-			System.out.println("성공하셨습니다! 곰이 물고기를 잡았습니다. \nplay횟수 : "+movingCount+"번");
 			return GameConstant.MISSION_COMPLETE;
 		} 
 		movingCount++;

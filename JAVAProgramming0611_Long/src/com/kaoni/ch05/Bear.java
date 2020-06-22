@@ -29,7 +29,7 @@ public class Bear extends GameObject {
 	}
 	
 	// 유저에게 커멘드 입력받기
-	private char userCommand() {
+	private char userCommand() { // scanner 계속 만들지 말기
 		Scanner sc = new Scanner(System.in);
 		char userInput = sc.next().charAt(0);
 		return userInput;

@@ -42,7 +42,7 @@ public class Fish extends GameObject {
 				break;
 			case 3: move('w');
 			}
-		}
+		} // 
 	}
 
 }

@@ -19,7 +19,7 @@ import java.util.Random;
  * @Version : 1.0.0
  */
 public class HangManWord {
-	private final String TEXTFILE = "C:\\Long\\Today_I_Learned\\JAVAProgramming0612_Long\\src\\hangman/words.txt";
+	private final String TEXTFILE = "C:\\Long\\Today_I_Learned/Today-I-Learn/JAVAProgramming0612_Long\\src\\hangman/words.txt";
 	private final int WORDCOUNT = 25142; // 총 단어 갯수
 
 	public String randomWord() {
@@ -35,13 +35,15 @@ public class HangManWord {
 		}
 
 		int ran = random.nextInt(WORDCOUNT); // 랜덤 번호 생성
-
-		return readWord(bReader, ran);
+		// bReader -> readWord 안으로 넣어버리면
+		String readWord = readWord(bReader, ran);
+		
+		return readWord;
 	}
 
 	private String readWord(BufferedReader bReader, int ran) {
-		String word = null;
-		try {
+		String word = null; // ran = 10 9
+		try { // (for)문을 통해 bReader 리턴
 			while (ran > 0) {
 				word = bReader.readLine();
 				if(word == null) {
@@ -49,8 +51,15 @@ public class HangManWord {
 				}
 				ran--;
 			}
-		} catch (IOException e) {
+		} catch (IOException e) { //exception 대비!!
 			e.printStackTrace();
+		} finally {
+			try {
+				if(bReader != null) bReader.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 		return word; // ran번째 단어 반환.

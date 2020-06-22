@@ -17,7 +17,7 @@ public class HangManGame {
 	
 	private final boolean RIGHT_ANSWER = true;
 	private final boolean INCORRECT_ANSWER = false;
-	private final int HANGMAN_DEATH = 5;
+	private final int HANGMAN_DEATH = 5; //변수명 max_try 
 	private final int EXIT = 0;
 	private final int LEVEL_EASY = 1;
 	private final int LEVEL_NORMAL = 2;
@@ -128,14 +128,14 @@ public class HangManGame {
 	}
 	
 	
-	// 행맨 객체 만들기
+	// 행맨 객체 만들기 예외처리
 	private HangManVO createHangMan(String word) {
-		int level = settingLevel(); // 유저가 레벨 설정 (level만큼 빈 칸)
-		int[] hidden = new int[level];
-		HashSet<Integer> checkDuplication = new HashSet<Integer>();
+		int level = settingLevel(); // 유저가 레벨 설정 (level만큼 빈 칸) 1~3 빈 칸
+		int[] hidden = new int[level]; //word 빈칸 index 3개 
+		HashSet<Integer> checkDuplication = new HashSet<Integer>(); //빈칸 인덱스
 		int count = 0;
 		while(count != level) {
-			int ran = (int) (Math.random() * word.length()); // 랜덤 숫자 추출
+			int ran = (int) (Math.random() * word.length()); // 변수명 랜덤 숫자 추출
 			if(!checkDuplication.add(ran)) {
 				continue;
 			}

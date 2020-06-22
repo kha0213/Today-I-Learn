@@ -19,8 +19,8 @@ public class HangManMessage {
 			"■\n"+
 			"■\n"+
 			"■■■\n"+
-			"■■■■■■■\n"
-			,
+			"■■■■■■■\n",
+			
 			"■■■■■■■■■■\n"+
 			"■        ■\n"+
 			"■        ○\n"+
@@ -29,6 +29,7 @@ public class HangManMessage {
 			"■\n"+
 			"■■■\n"+
 			"■■■■■■■\n",
+			
 			"■■■■■■■■■■\n"+
 			"■        ■\n"+
 			"■        ○\n"+
@@ -37,6 +38,7 @@ public class HangManMessage {
 			"■\n"+
 			"■■■\n"+
 			"■■■■■■■\n",
+			
 			"■■■■■■■■■■\n"+
 			"■        ■\n"+
 			"■        ○\n"+
@@ -45,6 +47,7 @@ public class HangManMessage {
 			"■\n"+
 			"■■■\n"+
 			"■■■■■■■\n",
+			
 			"■■■■■■■■■■\n"+
 			"■        ■\n"+
 			"■        ○\n"+
