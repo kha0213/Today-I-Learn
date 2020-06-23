@@ -1,4 +1,4 @@
-package com.kaoni.ch15_2;
+package com.kaoni.ch15;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -45,8 +45,7 @@ public class ServerEx extends Application {
 	 * @Method startServer
 	 */
 	public void startServer() {
-		// 이용가능한 프로세스 개수 : 현재 4개
-		executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+		executorService = Executors.newCachedThreadPool();
 		try {
 			serverSocket = new ServerSocket(Cons.PORTNUM);
 		} catch (IOException e) {
@@ -232,5 +231,4 @@ public class ServerEx extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
-
 }

@@ -7,5 +7,4 @@ public class Cons {
 	public static final int SET_UI_HEIGHT = 300;
 	public static final int SET_BUTTON_WIDTH = 60;
 	public static final int SET_BUTTON_HEIGHT = 30;
-	
 }
