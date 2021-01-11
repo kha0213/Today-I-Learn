@@ -4,8 +4,8 @@ Today I Learned
 [mega_IT공부한 소스로 가기](https://github.com/kha0213/mega_IT)<br>
 ## 인프런 인터넷강의<br>
 [1.모든 개발자를 위한 HTTP 웹 기본 지식(김영한)](https://github.com/kha0213/Today-I-Learn/blob/master/InfLearn/%EB%AA%A8%EB%93%A0%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20HTTP%20%EC%9B%B9%20%EA%B8%B0%EB%B3%B8%20%EC%A7%80%EC%8B%9D(%EA%B9%80%EC%98%81%ED%95%9C).md)<br>
-## 책 공부 <br>
-[1.모던 자바 인 액션](https://github.com/kha0213/Today-I-Learn/blob/master/bookStudy/%EC%9E%90%EB%B0%94%20%EB%AA%A8%EB%8D%98%20%EC%9D%B8%20%EC%95%A1%EC%85%98/0.%20Intro.md)<br>
+## Book Study <br>
+[1.Modern Java in Action](https://github.com/kha0213/Today-I-Learn/blob/master/bookStudy/%EC%9E%90%EB%B0%94%20%EB%AA%A8%EB%8D%98%20%EC%9D%B8%20%EC%95%A1%EC%85%98/0.%20Intro.md)<br>
 ## 혼자 공부한 개념정리<br>
 [1.HTML_01.tag](https://github.com/kha0213/Today-I-Learn/wiki/HTML_01.tag)<br>
 [2.HTML_02.form](https://github.com/kha0213/Today-I-Learn/wiki/HTML_02.form)<br>
