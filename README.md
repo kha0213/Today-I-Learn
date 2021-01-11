@@ -2,11 +2,11 @@ Today I Learned
 =============
 [(코딩)유용한사이트 정리](https://github.com/kha0213/Today-I-Learn/wiki/%EC%9C%A0%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%95%EB%A6%AC)<br>
 [mega_IT공부한 소스로 가기](https://github.com/kha0213/mega_IT)<br>
-## 인프런 인터넷강의<br>
+## InfLearn Lecture
 [1.모든 개발자를 위한 HTTP 웹 기본 지식(김영한)](https://github.com/kha0213/Today-I-Learn/blob/master/InfLearn/%EB%AA%A8%EB%93%A0%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20HTTP%20%EC%9B%B9%20%EA%B8%B0%EB%B3%B8%20%EC%A7%80%EC%8B%9D(%EA%B9%80%EC%98%81%ED%95%9C).md)<br>
 ## Book Study <br>
 [1.Modern Java in Action](https://github.com/kha0213/Today-I-Learn/blob/master/bookStudy/Modern%20Java%20in%20Action/0.%20Intro.md)<br>
-## 혼자 공부한 개념정리<br>
+## 혼자 공부한 개념정리
 [1.HTML_01.tag](https://github.com/kha0213/Today-I-Learn/wiki/HTML_01.tag)<br>
 [2.HTML_02.form](https://github.com/kha0213/Today-I-Learn/wiki/HTML_02.form)<br>
 [3.HTML_03.layout](https://github.com/kha0213/Today-I-Learn/wiki/HTML_03.layout)<br>
@@ -44,7 +44,7 @@ Today I Learned
 [Spring_14.File_up_load](https://github.com/kha0213/Today-I-Learn/wiki/Spring_14.File_up_load)<br>
 [Spring_15.mailSender](https://github.com/kha0213/Today-I-Learn/wiki/Spring_15.mailSender)<br>
 [Spring_16.mybatis](https://github.com/kha0213/Today-I-Learn/wiki/Spring_16.mybatis)<br>
-## JSP공부<br>
+## JSP공부
 [JSP_01.mapping](https://github.com/kha0213/Today-I-Learn/wiki/JSP_01.mapping)<br>
 [JSP_02.request_response](https://github.com/kha0213/Today-I-Learn/wiki/JSP_02.request_response)<br>
 [JSP_03.ServletLifeCycle](https://github.com/kha0213/Today-I-Learn/wiki/JSP_03.ServletLifeCycle)<br>
@@ -62,9 +62,9 @@ Today I Learned
 [JSP_16.EL(Expression_Language)](https://github.com/kha0213/Today-I-Learn/wiki/JSP_16.EL(Expression_Language))<br>
 [JSP_17.JSTL(JSP_standard_Tag_Library)](https://github.com/kha0213/Today-I-Learn/wiki/JSP_17.JSTL(JSP_standard_Tag_Library))<br>
 [JSP_18.FrontController_Command](https://github.com/kha0213/Today-I-Learn/wiki/JSP_18.FrontController_Command)<br>
-## JQuery공부<br>
+## JQuery공부
 [JQuery_01.start_selector](https://github.com/kha0213/Today-I-Learn/wiki/JQuery_01.start_selector)<br>
 [JQuery_02.chain_traversing](https://github.com/kha0213/Today-I-Learn/wiki/JQuery_02.chain_traversing)<br>
 [JQuery_03.function](https://github.com/kha0213/Today-I-Learn/wiki/JQuery_03.function)<br>
-## Android공부<br>
+## Android공부
 [1.Android_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/Android_01.new_project)<br>
