@@ -21,7 +21,6 @@ public class Lv1_PickTwoAndAdd {
     }
 
     public static int[] solution(int[] numbers) {
-        Arrays.sort(numbers);
         int size = numbers.length;
         return  IntStream.range(0, size - 1).flatMap(a ->
                 IntStream.range(a + 1, size).map(b -> numbers[b]+numbers[a])
