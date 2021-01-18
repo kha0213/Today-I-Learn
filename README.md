@@ -2,8 +2,7 @@ Today I Learned
 =============
 ## Algorithm
 [Algorithm main](https://github.com/kha0213/Today-I-Learn/blob/master/algorithm/index.md)   
-[(코딩)유용한사이트 정리](https://github.com/kha0213/Today-I-Learn/wiki/%EC%9C%A0%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%95%EB%A6%AC)<br>
-[mega_IT공부한 소스로 가기](https://github.com/kha0213/mega_IT)<br>
+
 ## InfLearn Lecture
 [1.모든 개발자를 위한 HTTP 웹 기본 지식(김영한)](https://github.com/kha0213/Today-I-Learn/blob/master/InfLearn/%EB%AA%A8%EB%93%A0%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20HTTP%20%EC%9B%B9%20%EA%B8%B0%EB%B3%B8%20%EC%A7%80%EC%8B%9D(%EA%B9%80%EC%98%81%ED%95%9C).md)<br>
 ## Book Study <br>
@@ -70,3 +69,6 @@ Today I Learned
 [JQuery_03.function](https://github.com/kha0213/Today-I-Learn/wiki/JQuery_03.function)<br>
 ## Android공부
 [1.Android_01.new_project](https://github.com/kha0213/Today-I-Learn/wiki/Android_01.new_project)<br>
+
+[(코딩)유용한사이트 정리](https://github.com/kha0213/Today-I-Learn/wiki/%EC%9C%A0%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%95%EB%A6%AC)<br>
+[mega_IT공부한 소스로 가기](https://github.com/kha0213/mega_IT)<br>
