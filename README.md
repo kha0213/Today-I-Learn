@@ -1,5 +1,7 @@
 Today I Learned
 =============
+## Algorithm
+[Algorithm main](https://github.com/kha0213/Today-I-Learn/blob/master/algorithm/index.md)   
 [(코딩)유용한사이트 정리](https://github.com/kha0213/Today-I-Learn/wiki/%EC%9C%A0%EC%9A%A9%ED%95%9C-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%95%EB%A6%AC)<br>
 [mega_IT공부한 소스로 가기](https://github.com/kha0213/mega_IT)<br>
 ## InfLearn Lecture
