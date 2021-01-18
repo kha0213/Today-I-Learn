@@ -1,8 +1,7 @@
-package study.ExhaustiveSearch;
+package study.exhaustiveSearch;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * 2021-01-16
