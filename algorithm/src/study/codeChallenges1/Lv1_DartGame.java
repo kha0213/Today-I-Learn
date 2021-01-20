@@ -64,6 +64,8 @@ public class Lv1_DartGame {
                         shot[i-1] *= 2;
                     }
                 }
+
+
             }
 
             return shot[0] + shot[1] + shot[2];
