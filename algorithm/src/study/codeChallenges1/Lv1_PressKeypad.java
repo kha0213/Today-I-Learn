@@ -7,11 +7,12 @@ package study.codeChallenges1;
  * 프로그래머스 > 2020 카카오 개발자 인턴쉽 > 키패드 누르기
  * https://programmers.co.kr/learn/courses/30/lessons/67256
  */
-public class PressKeypad {
+public class Lv1_PressKeypad {
     public static void main(String[] args) {
-        PressKeypad pk = new PressKeypad();
+        var pk = new Lv1_PressKeypad();
         int[] numbers = {1,3,4,5,8,2,1,4,5,9,5};
         System.out.println(pk.solution(numbers,"right"));
+
     }
 
     public String solution(int[] numbers, String hand) {
