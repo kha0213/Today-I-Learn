@@ -7,9 +7,9 @@ package study.codeChallenges1;
  * 프로그래머스 > 월간 코드 챌린지 시즌1 > 3진법 뒤집기
  * https://programmers.co.kr/learn/courses/30/lessons/68935
  */
-public class ThreeBaseReverse {
+public class Lv1_ThreeBaseReverse {
     public static void main(String[] args) {
-        ThreeBaseReverse th = new ThreeBaseReverse();
+        Lv1_ThreeBaseReverse th = new Lv1_ThreeBaseReverse();
         System.out.println(th.solution(15485212));
 
     }
