@@ -1,7 +1,7 @@
 package study.practice;
 
-import java.util.Arrays;
-import java.util.TreeSet;
+import java.util.*;
+import java.util.function.ToIntFunction;
 
 /**
  * 2021-01-22
@@ -27,22 +27,32 @@ public class Lv2_GroundPicking {
     }
     static int[][] arr;
 
-    /*public int recursion(int x, int firstIndex, int firstSum, int secondIndex, int secondSum) {
-        for(int i=0; i<4; i++){
-            if(i != firstIndex) {
-
-            }
-            if(i != secondIndex) {
-
-            }
-        }
-        if (x == arr.length-1){
-            return Math.max(firstSum,secondSum);
+    public int[] recursion(int[][] land, int x, int[] cumulativeSum) {
+        if(x == land.length - 1 ) {
+            
         } else {
-            recursion(x+1);
-        }
-    }*/
-}
-class Ground {
 
+        }
+        return null;
+    }
+
+    public int maxInArr(int[] arr4, int exceptIdx){
+        List<Integer> arr = new ArrayList<>();
+        for(int i=0;i<arr4.length;i++){
+            if(i!=exceptIdx) arr.add(arr4[i]);
+        }
+        return Math.max(Math.max(arr.get(0),arr.get(1)),arr.get(2));
+    }
+}
+class Top2LocationAndSum {
+    int fSum;
+    int fLoc;
+    int sSum;
+    int sLoc;
+    public Top2LocationAndSum(int fSum, int fLoc, int sSum, int sLoc) {
+        this.fSum = fSum;
+        this.fLoc = fLoc;
+        this.sSum = sSum;
+        this.sLoc = sLoc;
+    }
 }
