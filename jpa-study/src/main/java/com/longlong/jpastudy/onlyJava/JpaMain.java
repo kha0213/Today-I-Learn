@@ -32,7 +32,7 @@ public class JpaMain {
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
-            System.out.println("■■■■■■■■■■■■■■■■■■■■ ERROR : " + e.getMessage());
+            System.out.println("■■■■■■■■■■■■■■■■■■■■ ERROR  : " + e.getMessage());
         } finally {
             em.close();
 
