@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * instagram : https://www.instagram.com/moon_maria__/
  */
 
-public class Ex01 {
+public class Ex01_MeetingRooms1 {
 
     public static void main(String[] args) {
         Interval[] it = new Interval[2];

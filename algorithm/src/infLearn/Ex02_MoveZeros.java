@@ -14,7 +14,7 @@ import java.util.List;
  * Blog : https://kha0213.github.io/
  * instagram : https://www.instagram.com/moon_maria__/
  */
-public class Ex02 {
+public class Ex02_MoveZeros {
     public static void moveZeroes(int[] nums) {
         List<Integer> list = new ArrayList<>();
         for(int n : nums) {

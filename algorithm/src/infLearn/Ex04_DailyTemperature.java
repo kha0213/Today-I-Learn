@@ -15,7 +15,7 @@ import java.util.Stack;
  * Blog : https://kha0213.github.io/
  * instagram : https://www.instagram.com/moon_maria__/
  */
-public class Ex04 {
+public class Ex04_DailyTemperature {
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73})));
