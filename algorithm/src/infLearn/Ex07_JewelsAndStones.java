@@ -5,6 +5,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
+ *
+ *  Question 7 : [JewelsAndStones]
+ *
  * Created by Kim Young Long.
  * Date : 2021-04-17.
  * Github : https://github.com/kha0213
