@@ -29,7 +29,7 @@ public class Lv3_DiskController {
         int allTime = 0;
 
         for (Interval i : intervals) {
-            
+
         }
 
 
