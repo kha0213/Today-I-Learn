@@ -2,6 +2,7 @@
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              version="2.1">
     <persistence-unit name="simple-jpa-application">
+
         <properties>
             <!-- 필수 속성 -->
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
@@ -26,4 +27,6 @@
             <property name="hibernate.ejb.naming_strategy" value="org.hibernate.cfg.ImprovedNamingStrategy"/>
         </properties>
     </persistence-unit>
+
+
 </persistence>
