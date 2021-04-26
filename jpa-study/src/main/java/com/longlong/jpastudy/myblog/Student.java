@@ -1,5 +1,6 @@
 package com.longlong.jpastudy.myblog;
 
+import com.longlong.jpastudy.vo.BaseEntity;
 import lombok.*;
 
 import javax.persistence.*;
@@ -14,20 +15,32 @@ import java.util.Set;
  * instagram : https://www.instagram.com/moon_maria__/
  */
 @Entity
+@TableGenerator(
+        name = "Student_Generator",
+        table = "Student_Sequence",
+        pkColumnValue = "Student_Seq",
+        allocationSize = 1
+)
 @Getter
 @Setter
 @ToString(exclude = "subjects")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student {
+public class Student extends BaseEntity {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.TABLE,
+                    generator = "Student_Generator")
     @Column(name = "student_id")
     private Long id;
 
     private String name;
 
     @ManyToMany
+    @JoinTable(
+            name = "STUDENT_SUBJECT",
+            joinColumns = @JoinColumn(name = "student_id"),
+            inverseJoinColumns = @JoinColumn(name = "subject_id")
+    )
     private Set<Subject> subjects = new HashSet<>();
 
     @OneToOne

@@ -13,8 +13,9 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Orders {
+public class Orders extends BaseEntity {
     @Id @GeneratedValue
+    @Column(name = "Order_Id")
     private Long id;
 
     private LocalDateTime orderDate;
@@ -25,7 +26,11 @@ public class Orders {
     @ManyToOne(fetch = FetchType.LAZY)
     private Member member;
 
-    @OneToMany(mappedBy = "id")
+    @OneToOne
+    @JoinColumn(name = "ID")
+    private Delivery delivery;
+
+    @OneToMany(mappedBy = "order")
     private List<OrderItem> orderItems = new ArrayList<>();
 
     public Orders(LocalDateTime orderDate, Status status) {

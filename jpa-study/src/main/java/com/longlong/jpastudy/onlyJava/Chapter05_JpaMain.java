@@ -5,6 +5,7 @@ import com.longlong.jpastudy.vo.Item;
 import com.longlong.jpastudy.vo.Member;
 import com.longlong.jpastudy.vo.OrderItem;
 import com.longlong.jpastudy.vo.Orders;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -64,23 +65,23 @@ public class Chapter05_JpaMain {
         Item item3 = new Item("item3",1000,1000);
         em.persist(item3);
 
-        OrderItem orderItem1 = new OrderItem(10000,2);
-        orderItem1.addItem(item1);
-        //orderItem1.setItem(item1);
-        orderItem1.putOrder(orderA);
-        em.persist(orderItem1);
-
-        OrderItem orderItem2 = new OrderItem(20000,3);
-        orderItem2.addItem(item2);
-        // orderItem2.setItem(item2);
-        orderItem2.putOrder(orderA);
-        em.persist(orderItem2);
-
-        OrderItem orderItem3 = new OrderItem(1000,300);
-        orderItem3.addItem(item3);
-        //orderItem3.setItem(item3);
-        orderItem3.putOrder(orderB);
-        em.persist(orderItem3);
+//        OrderItem orderItem1 = new OrderItem(10000,2);
+//        orderItem1.addItem(item1);
+//        //orderItem1.setItem(item1);
+//        orderItem1.putOrder(orderA);
+//        em.persist(orderItem1);
+//
+//        OrderItem orderItem2 = new OrderItem(20000,3);
+//        orderItem2.addItem(item2);
+//        // orderItem2.setItem(item2);
+//        orderItem2.putOrder(orderA);
+//        em.persist(orderItem2);
+//
+//        OrderItem orderItem3 = new OrderItem(1000,300);
+//        orderItem3.addItem(item3);
+//        //orderItem3.setItem(item3);
+//        orderItem3.putOrder(orderB);
+//        em.persist(orderItem3);
 
 
         print(memberA);

@@ -9,16 +9,19 @@ import javax.persistence.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderItem {
+public class OrderItem extends BaseEntity {
     @Id @GeneratedValue
+    @Column(name = "OrderItem_Id")
     private Long id;
 
     private int orderPrice;
 
     private int count;
     @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "Order_Id")
     private Orders order;
     @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "Item_Id")
     private Item item;
 
     public OrderItem(int orderPrice, int count) {
