@@ -5,11 +5,22 @@
 
         <properties>
             <!-- 필수 속성 -->
+
+            <!-- H2 DB-->
+            <!--
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
             <property name="javax.persistence.jdbc.user" value="sa"/>
             <property name="javax.persistence.jdbc.password" value=""/>
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/jpastudy"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            -->
+
+            <!-- Maria DB-->
+            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="rladudfhd!1"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/jpastudy"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDB10Dialect"/>
 
             <!-- 옵션 -->
             <!-- 콘솔에 하이버네이트가 실행하는 SQL문 출력 -->
