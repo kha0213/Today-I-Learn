@@ -1,11 +1,10 @@
-package com.longlong.jpastudy.vo;
+package com.longlong.jpastudy.vo.item;
 
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
-import javax.persistence.SecondaryTable;
 
 /**
  * Created by Kim Young Long.

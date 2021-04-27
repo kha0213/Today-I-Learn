@@ -24,13 +24,14 @@ public class Orders extends BaseEntity {
     private Status status; // VIP. NORMAL
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "MEMBER_ID")
     private Member member;
 
-    @OneToOne
-    @JoinColumn(name = "ID")
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "DELIVERY_ID")
     private Delivery delivery;
 
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems = new ArrayList<>();
 
     public Orders(LocalDateTime orderDate, Status status) {

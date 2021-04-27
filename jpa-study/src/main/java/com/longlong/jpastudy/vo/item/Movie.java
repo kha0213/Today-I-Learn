@@ -1,4 +1,4 @@
-package com.longlong.jpastudy.vo;
+package com.longlong.jpastudy.vo.item;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,10 +1,13 @@
 package com.longlong.jpastudy.vo;
 
+import com.longlong.jpastudy.vo.item.embedded.Address;
 import lombok.*;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "MEMBER")
@@ -19,20 +22,20 @@ public class Member extends BaseEntity {
 
     private String name;
 
-    private String city;
+    @Embedded
+    private Address address;
 
-    private String street;
-
-    private String zipcode;
-
-    @OneToMany(mappedBy = "member")
-    private List<Orders> orders = new ArrayList<>();
+    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Orders> orders = new HashSet<>();
 
 
     public Member(String name, String city, String street, String zipcode) {
         this.name = name;
-        this.city = city;
-        this.street = street;
-        this.zipcode = zipcode;
+        this.address = new Address(city, street, zipcode);
+    }
+    // 연관관계 편의 메소드
+    public void addOrder(Orders orderB) {
+        this.orders.add(orderB);
+        orderB.setMember(this);
     }
 }

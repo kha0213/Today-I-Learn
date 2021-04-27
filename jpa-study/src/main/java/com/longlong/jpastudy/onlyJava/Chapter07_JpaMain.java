@@ -2,6 +2,8 @@ package com.longlong.jpastudy.onlyJava;
 
 import com.longlong.jpastudy.config.Status;
 import com.longlong.jpastudy.vo.*;
+import com.longlong.jpastudy.vo.item.Album;
+import com.longlong.jpastudy.vo.item.Item;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

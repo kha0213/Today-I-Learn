@@ -1,17 +1,21 @@
 package com.longlong.jpastudy.onlyJava;
 
 import com.longlong.jpastudy.config.Status;
+import com.longlong.jpastudy.vo.*;
+import com.longlong.jpastudy.vo.item.Album;
 import com.longlong.jpastudy.vo.item.Item;
-import com.longlong.jpastudy.vo.Member;
-import com.longlong.jpastudy.vo.Orders;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
-public class Chapter05_JpaMain {
+public class Chapter08_JpaMain {
     public static void main(String[] args) {
         System.out.println("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
         System.out.println("start!!");
@@ -41,52 +45,23 @@ public class Chapter05_JpaMain {
     }
 
     public static void logic(EntityManager em, EntityTransaction tx) throws Exception {
-        Member memberA = new Member("memberA","city1","street1","zipcode1");
+        // order에 cascade 걸어야 한다.
+//        Orders order = new Orders();
+//        em.persist(order);
+//        Delivery delivery = new Delivery();
+//        order.setDelivery(delivery);
+        Member memberA = new Member();
+        memberA.setName("memberA");
+
+        Orders orderA = new Orders();
+        Orders orderB = new Orders();
+        memberA.addOrder(orderA);
+        memberA.addOrder(orderB);
         em.persist(memberA);
-        Member memberB = new Member("memberB","city2","street2","zipcode2");
-        em.persist(memberB);
 
-        Orders orderA = new Orders(LocalDateTime.of(2021, 3, 9, 12, 30), Status.DELIVERY);
-        orderA.putMember(memberA);
-        //orderA.setMember(memberA);
-        em.persist(orderA);
-
-        Orders orderB = new Orders(LocalDateTime.now(), Status.PREPARE);
-        orderB.putMember(memberA);
-        //orderB.setMember(memberA);
-        em.persist(orderB);
-
-        Item item1 = new Item("item1",10000,1000);
-        em.persist(item1);
-        Item item2 = new Item("item2",20000,1000);
-        em.persist(item2);
-        Item item3 = new Item("item3",1000,1000);
-        em.persist(item3);
-
-//        OrderItem orderItem1 = new OrderItem(10000,2);
-//        orderItem1.addItem(item1);
-//        //orderItem1.setItem(item1);
-//        orderItem1.putOrder(orderA);
-//        em.persist(orderItem1);
-//
-//        OrderItem orderItem2 = new OrderItem(20000,3);
-//        orderItem2.addItem(item2);
-//        // orderItem2.setItem(item2);
-//        orderItem2.putOrder(orderA);
-//        em.persist(orderItem2);
-//
-//        OrderItem orderItem3 = new OrderItem(1000,300);
-//        orderItem3.addItem(item3);
-//        //orderItem3.setItem(item3);
-//        orderItem3.putOrder(orderB);
-//        em.persist(orderItem3);
-
-
-
-
-
-
+        memberA.getOrders().remove(orderA);
+        for (Orders order : memberA.getOrders()) {
+            System.out.println("order = " + order);
+        }
     }
-
-
 }

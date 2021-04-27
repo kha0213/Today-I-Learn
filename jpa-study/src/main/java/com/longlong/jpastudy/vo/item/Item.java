@@ -1,5 +1,8 @@
-package com.longlong.jpastudy.vo;
+package com.longlong.jpastudy.vo.item;
 
+import com.longlong.jpastudy.vo.BaseEntity;
+import com.longlong.jpastudy.vo.Category;
+import com.longlong.jpastudy.vo.OrderItem;
 import lombok.*;
 
 import javax.persistence.*;
