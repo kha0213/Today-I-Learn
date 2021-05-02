@@ -44,7 +44,7 @@ public class Student extends BaseEntity {
     private Set<Subject> subjects = new HashSet<>();
 
     @OneToOne
-    private Address address;
+    private AddressByMyBlog address;
 
     public Student(String name) {
         this.name = name;

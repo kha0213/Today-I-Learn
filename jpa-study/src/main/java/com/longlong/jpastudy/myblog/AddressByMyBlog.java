@@ -17,7 +17,7 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Address {
+public class AddressByMyBlog {
     @Id
     @GeneratedValue
     @Column(name = "address_id")
@@ -32,7 +32,7 @@ public class Address {
     @OneToOne(mappedBy = "address")
     private Student student;
 
-    public Address(String street, String zip, String city) {
+    public AddressByMyBlog(String street, String zip, String city) {
         this.street = street;
         this.zip = zip;
         this.city = city;

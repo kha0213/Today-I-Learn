@@ -37,9 +37,9 @@ public class OneToOne_Main {
         em.persist(studentA);
         Student studentB = new Student("studentB");
         em.persist(studentB);
-        Address address1 = new Address("munjeoug", "158-200", "seoul");
+        AddressByMyBlog address1 = new AddressByMyBlog("munjeoug", "158-200", "seoul");
         em.persist(address1);
-        Address address2 = new Address("garak", "129-120", "seoul");
+        AddressByMyBlog address2 = new AddressByMyBlog("garak", "129-120", "seoul");
         em.persist(address2);
         studentA.setAddress(address1);
         studentB.setAddress(address2);

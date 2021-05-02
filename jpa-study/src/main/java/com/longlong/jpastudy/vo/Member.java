@@ -25,6 +25,13 @@ public class Member extends BaseEntity {
     @Embedded
     private Address address;
 
+    @ElementCollection
+    @CollectionTable(
+            name = "ADDRESS",
+            joinColumns = @JoinColumn(name = "Member_Id"))
+    private List<Address> addressHistory = new ArrayList<>();
+
+
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Orders> orders = new HashSet<>();
 

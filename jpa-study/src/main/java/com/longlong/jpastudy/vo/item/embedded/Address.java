@@ -1,11 +1,15 @@
 package com.longlong.jpastudy.vo.item.embedded;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Embeddable;
+<<<<<<< Updated upstream
 import java.io.Serializable;
+=======
+>>>>>>> Stashed changes
 import java.util.Objects;
 
 /**
@@ -19,7 +23,12 @@ import java.util.Objects;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+<<<<<<< Updated upstream
 public class Address implements Serializable {
+=======
+@EqualsAndHashCode
+public class Address {
+>>>>>>> Stashed changes
     private String city;
     private String street;
     private String zipcode;

@@ -1,7 +1,6 @@
 package com.longlong.jpastudy.onlyJava;
 
 import com.longlong.jpastudy.vo.Member;
-import com.longlong.jpastudy.vo.Orders;
 import com.longlong.jpastudy.vo.item.embedded.Address;
 
 import javax.persistence.EntityManager;
@@ -9,7 +8,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-public class Chapter09_JpaMain {
+public class Chapter10_JpaMain {
     public static void main(String[] args) {
         System.out.println("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
         System.out.println("start!!");
@@ -17,6 +16,7 @@ public class Chapter09_JpaMain {
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("simple-jpa-application");
         EntityManager em = emf.createEntityManager();
+
 
 
         System.out.println("■■■■■■■■■■■■■■■■■■■■시작~~~~~");
