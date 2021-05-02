@@ -14,7 +14,7 @@ import java.util.Set;
  * Blog : https://kha0213.github.io/
  * instagram : https://www.instagram.com/moon_maria__/
  */
-@Entity
+//@Entity
 @TableGenerator(
         name = "Student_Generator",
         table = "Student_Sequence",

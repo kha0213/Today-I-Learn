@@ -19,7 +19,7 @@ import java.util.Set;
 @ToString(exclude = "subject")
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+//@Entity
 public class Teacher {
     @Id @GeneratedValue
     @Column(name = "teacher_id")
