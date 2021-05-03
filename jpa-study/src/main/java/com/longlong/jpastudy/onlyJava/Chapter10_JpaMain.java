@@ -41,11 +41,11 @@ public class Chapter10_JpaMain {
     public static void logic(EntityManager em, EntityTransaction tx) throws Exception {
         Member memberA = new Member("Long~", "city", "street", "zipcode");
         em.persist(memberA);
-        Address addressA = new Address("서울", "문정로", "158-2");
-        Address addressB = new Address("부산", "겸지로", "290-22");
-        Address addressC = new Address("LA", "갈비", "맛있다.");
-        memberA.getAddressHistory().add(addressA);
-        memberA.getAddressHistory().add(addressB);
-        memberA.getAddressHistory().add(addressC);
+//        Address addressA = new Address("서울", "문정로", "158-2");
+//        Address addressB = new Address("부산", "겸지로", "290-22");
+//        Address addressC = new Address("LA", "갈비", "맛있다.");
+//        memberA.getAddressHistory().add(addressA);
+//        memberA.getAddressHistory().add(addressB);
+//        memberA.getAddressHistory().add(addressC);
     }
 }
