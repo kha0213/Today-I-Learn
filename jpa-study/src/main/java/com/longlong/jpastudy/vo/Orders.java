@@ -44,6 +44,11 @@ public class Orders extends BaseEntity {
         setMember(memberA);
     }
 
+    public void setDelivery(Delivery delivery) {
+        delivery.setOrder(this);
+        this.delivery = delivery;
+    }
+
     @Override
     public String toString() {
         return "Orders{" +

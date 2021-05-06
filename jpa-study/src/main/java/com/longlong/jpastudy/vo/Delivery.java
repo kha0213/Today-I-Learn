@@ -1,6 +1,7 @@
 package com.longlong.jpastudy.vo;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -15,6 +16,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
 public class Delivery {
     @Id @GeneratedValue
     @Column(name = "Delivery_Id")
@@ -28,4 +30,10 @@ public class Delivery {
 
     @OneToOne(fetch = FetchType.LAZY,mappedBy = "delivery")
     private Orders order;
+
+    public Delivery(String city, String street, String zipcode) {
+        this.city = city;
+        this.street = street;
+        this.zipcode = zipcode;
+    }
 }
