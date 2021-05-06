@@ -48,7 +48,7 @@ public class Chapter08_Proxy {
         Orders order1 = new Orders(LocalDateTime.now(), Status.PREPARE);
         em.persist(order1);
 
-        Member member = new Member();
+        Member member = new Member("name","city","street","zipcode");
         member.addOrder(order1);
         em.persist(member);
 
@@ -59,5 +59,7 @@ public class Chapter08_Proxy {
 
         System.out.println("orders = " + orders.getClass().getName());
         System.out.println("orders.getMember() = " + orders.getMember().getClass().getName());
+        orders.getMember().getName();
+        System.out.println("12312312313");
     }
 }
