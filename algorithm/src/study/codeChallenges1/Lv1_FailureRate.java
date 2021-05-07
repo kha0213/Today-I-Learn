@@ -48,7 +48,7 @@ public class Lv1_FailureRate {
         }
         // 마지막 넣기
         if(stages[people-1] == N) {
-            set.add(new Stage())
+            //set.add(new Stage());
         } else {
 
         }
