@@ -4,6 +4,8 @@ import com.longlong.jpastudy.config.Status;
 import com.longlong.jpastudy.vo.Delivery;
 import com.longlong.jpastudy.vo.Member;
 import com.longlong.jpastudy.vo.Orders;
+import com.longlong.jpastudy.vo.item.embedded.Address;
+import org.hibernate.Hibernate;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -35,6 +37,7 @@ public class Chapter08_Proxy {
         } catch (Exception e) {
             tx.rollback();
             System.out.println("■■■■■■■■■■■■■■■■■■■■ ERROR   : " + e.getMessage());
+            e.printStackTrace();
         } finally {
             em.close();
 
@@ -45,21 +48,14 @@ public class Chapter08_Proxy {
 
     public static void logic(EntityManager em, EntityTransaction tx) throws Exception {
 
-        Orders order1 = new Orders(LocalDateTime.now(), Status.PREPARE);
-        em.persist(order1);
 
-        Member member = new Member("name","city","street","zipcode");
-        member.addOrder(order1);
-        em.persist(member);
+        Orders orders = em.find(Orders.class, 1L);
+        final Member proxyMember = orders.getMember(); // 프록시
 
-        em.flush();
-        em.clear();
+        System.out.println("proxyMember = " + proxyMember.getClass().getName());
 
-        Orders orders = em.find(Orders.class, order1.getId());
-
-        System.out.println("orders = " + orders.getClass().getName());
-        System.out.println("orders.getMember() = " + orders.getMember().getClass().getName());
-        orders.getMember().getName();
-        System.out.println("12312312313");
+        em.close();
+        final Address address = proxyMember.getAddress();
+        System.out.println("proxyMember address = " + address.getCity());
     }
 }
