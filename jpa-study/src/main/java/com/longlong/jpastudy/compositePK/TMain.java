@@ -41,11 +41,36 @@ public class TMain {
     }
 
     public static void logic(EntityManager em, EntityTransaction tx) throws Exception {
-        UsersId id1 = new UsersId(1L, "userA");
-        Users user = new Users(id1,33);
-        em.persist(user);
+        Parent parentA = new Parent();
+        parentA.setName("ParentA");
 
-        final Users findUser = em.find(Users.class, id1);
-        System.out.println("findUser = " + findUser);
+        em.persist(parentA);
+
+        Child childA = new Child();
+        childA.setName("ChildA");
+        childA.setParent(parentA);
+        em.persist(childA);
+
+        Child childB = new Child();
+        childB.setName("ChildB");
+        childB.setParent(parentA);
+        em.persist(childB);
+
+        GrandChild grandChildA = new GrandChild();
+        grandChildA.setName("GrandChildA");
+        grandChildA.setChild(childA);
+        em.persist(grandChildA);
+
+        GrandChild grandChildB = new GrandChild();
+        grandChildB.setName("GrandChildB");
+        grandChildB.setChild(childA);
+        em.persist(grandChildB);
+
+        GrandChild grandChildC = new GrandChild();
+        grandChildC.setName("GrandChildC");
+        grandChildC.setChild(childB);
+        em.persist(grandChildC);
+
+
     }
 }
