@@ -1,6 +1,6 @@
 package com.longlong.jpastudy.vo;
 
-import com.longlong.jpastudy.config.Status;
+import com.longlong.jpastudy.javaApp.config.Status;
 import lombok.*;
 
 import javax.persistence.*;
