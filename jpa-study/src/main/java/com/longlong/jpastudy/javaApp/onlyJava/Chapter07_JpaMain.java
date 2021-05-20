@@ -84,18 +84,18 @@ public class Chapter07_JpaMain {
         orderItem3.putOrder(orderB);
         em.persist(orderItem3);
 
-        Category category = new Category();
-        category.setName("categoryA");
-        em.persist(category);
-
-        Album album = new Album();
-        album.setName("I'M YOURS");
-        album.setPrice(19000);
-        album.setStockQuantity(10);
-        album.setEtc("ETC...");
-        album.setArtist("Jason Mraz");
-        album.addCategory(category);
-        em.persist(album);
+//        Category category = new Category();
+//        category.setName("categoryA");
+//        em.persist(category);
+//
+//        Album album = new Album();
+//        album.setName("I'M YOURS");
+//        album.setPrice(19000);
+//        album.setStockQuantity(10);
+//        album.setEtc("ETC...");
+//        album.setArtist("Jason Mraz");
+//        album.addCategory(category);
+//        em.persist(album);
 
 
         Map<String, Object> properties = em.getProperties();
