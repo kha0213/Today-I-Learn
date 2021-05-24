@@ -57,6 +57,7 @@ public class Category {
     @ManyToOne(fetch = FetchType.LAZY)
     private Category parent;
 
+
     public Category(String name) {
         this.name = name;
     }

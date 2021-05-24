@@ -6,6 +6,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Kim Young Long.
@@ -19,35 +21,42 @@ public class CategoryDbSet {
     }
 
     private static void categorySetting(EntityManager em) {
+        List<Category> list = new ArrayList<>();
+
         // level 0
         Category food = new Category("식품");
-        em.persist(food);
+        list.add(food);
 
         // level 1 (식품 하위)
         Category fruit = new Category("과일",food);
-        em.persist(fruit);
+        list.add(fruit);
         Category vegetable = new Category("채소",food);
-        em.persist(vegetable);
+        list.add(vegetable);
         Category meat = new Category("고기", food);
-        em.persist(meat);
+        list.add(meat);
 
         // level 2 (과일 하위)
         Category apple = new Category("사과", fruit);
-        em.persist(apple);
+        list.add(apple);
         Category banana = new Category("바나나", fruit);
-        em.persist(banana);
+        list.add(banana);
         // level 2 (고기 하위)
         Category pork = new Category("돼지고기", meat);
-        em.persist(pork);
+        list.add(pork);
         Category beef = new Category("소고기", meat);
-        em.persist(beef);
+        list.add(beef);
         Category chicken = new Category("닭고기", meat);
-        em.persist(chicken);
+        list.add(chicken);
 
         //level 3 (돼지고기 하위)
         Category boiledPork = new Category("수육", pork);
-        em.persist(boiledPork);
+        list.add(boiledPork);
         Category porkBelly = new Category("삼겹살", pork);
-        em.persist(porkBelly);
+        list.add(porkBelly);
+
+        // db반영
+        for (Category category : list) {
+            em.persist(category);
+        }
     }
 }

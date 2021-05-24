@@ -17,7 +17,6 @@ public class Chapter09_JpaMain {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("simple-jpa-application");
         EntityManager em = emf.createEntityManager();
 
-
         System.out.println("■■■■■■■■■■■■■■■■■■■■시작~~~~~");
 
         EntityTransaction tx = em.getTransaction();
