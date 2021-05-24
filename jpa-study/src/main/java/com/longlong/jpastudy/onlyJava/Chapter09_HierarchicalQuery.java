@@ -71,17 +71,17 @@ public class Chapter09_HierarchicalQuery {
         // 트리구조 조회 네이티브 쿼리
         String query = "WITH RECURSIVE CTE AS (\n" +
                 "    SELECT\n" +
-                "        c.category_id, c.level, c.name, c.parent_category_id,\n" +
+                "        c.category_id, c.level, c.name, c.parent_id,\n" +
                 "        c.name as out_name\n" +
                 "    FROM category c\n" +
                 "    WHERE c.level = 0\n" +
                 "    UNION ALL\n" +
                 "\n" +
                 "    SELECT\n" +
-                "        a.category_id, a.level, a.name, a.parent_category_id,\n" +
+                "        a.category_id, a.level, a.name, a.parent_id,\n" +
                 "        CONCAT(b.out_name,' > ',a.name)  as out_name\n" +
                 "    FROM category a\n" +
-                "    INNER JOIN CTE b ON a.parent_category_id = b.category_id\n" +
+                "    INNER JOIN CTE b ON a.parent_id = b.category_id\n" +
                 ")\n" +
                 "SELECT * FROM CTE\n" +
                 "order by out_name";

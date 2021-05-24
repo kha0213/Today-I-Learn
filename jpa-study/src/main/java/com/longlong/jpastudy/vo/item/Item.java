@@ -29,12 +29,13 @@ public class Item extends BaseEntity {
 
     private int stockQuantity;
 
-//    @ManyToMany
-//    @JoinTable(
-//        name = "CATEGORY_ITEM",
-//        joinColumns = @JoinColumn(name = "Category_Id")
-//    )
-//    private Set<Category> categories = new HashSet<>();
+    @ManyToMany
+    @JoinTable(
+        name = "CATEGORY_ITEM",
+        joinColumns = @JoinColumn(name = "Category_Id"),
+        inverseJoinColumns = @JoinColumn(name = "Item_id")
+    )
+    private Set<Category> categories = new HashSet<>();
 
     @OneToMany(mappedBy = "item")
     private List<OrderItem> orderItems = new ArrayList<>();
@@ -45,8 +46,8 @@ public class Item extends BaseEntity {
         this.stockQuantity = stockQuantity;
     }
 
-//    public void addCategory(Category category) {
-//        if(!categories.contains(category))
-//            categories.add(category);
-//    }
+    public void addCategory(Category category) {
+        if(!categories.contains(category))
+            categories.add(category);
+    }
 }

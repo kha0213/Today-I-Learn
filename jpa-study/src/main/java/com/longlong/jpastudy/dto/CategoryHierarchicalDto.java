@@ -23,5 +23,5 @@ public class CategoryHierarchicalDto {
 
     private String out_name;
 
-    private Long parent_category_id;
+    private Long parent_id;
 }

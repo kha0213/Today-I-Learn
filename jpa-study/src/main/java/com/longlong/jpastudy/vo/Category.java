@@ -30,31 +30,31 @@ import java.util.List;
                         @ColumnResult(name="name", type = String.class),
                         @ColumnResult(name="level", type = Integer.class),
                         @ColumnResult(name="out_name", type = String.class),
-                        @ColumnResult(name="parent_category_id", type = Long.class)
+                        @ColumnResult(name="parent_id", type = Long.class)
                 })
 )
 @Getter
 @NoArgsConstructor
-//@Entity
+@Entity
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE,
             generator = "Category_Generator")
-    @Column(name = "Category_Id")
+    @Column(name = "CATEGORY_ID")
     private Long id;
 
     private String name;
 
-    @Column(name = "levels")
-    private int levels;
+    private int level;
 
-//    @ManyToMany(mappedBy = "categories")
-//    private List<Item> items = new ArrayList<>();
+    @ManyToMany(mappedBy = "categories")
+    private List<Item> items = new ArrayList<>();
 
     @OneToMany(mappedBy = "parent")
     private List<Category> child;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "PARENT_ID")
     private Category parent;
 
 
@@ -64,7 +64,7 @@ public class Category {
 
     public Category(String name, Category parent) {
         this.name = name;
-        this.levels = parent.levels + 1;
+        this.level = parent.level + 1;
         this.parent = parent;
     }
 
@@ -73,7 +73,7 @@ public class Category {
         return "[Category]" +
                 "id=" + id +
                 ", name=" + name +
-                ", level=" + levels +
+                ", level=" + level +
                 ", parent.id=" + (parent==null?null:parent.id) +
                 ", child.size=" + (child==null?0:child.size())
                 ;
