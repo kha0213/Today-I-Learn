@@ -43,8 +43,8 @@ public class Chapter09_JpaMain {
         Address addressA = new Address("서울", "문정로", "158-2");
         Address addressB = new Address("부산", "겸지로", "290-22");
         Address addressC = new Address("LA", "갈비", "맛있다.");
-        memberA.getAddressHistory().add(addressA);
-        memberA.getAddressHistory().add(addressB);
-        memberA.getAddressHistory().add(addressC);
+        //memberA.getAddressHistory().add(addressA);
+        //memberA.getAddressHistory().add(addressB);
+        //memberA.getAddressHistory().add(addressC);
     }
 }

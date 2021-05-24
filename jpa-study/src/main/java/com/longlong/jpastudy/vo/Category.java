@@ -15,6 +15,12 @@ import java.util.List;
  * Blog : https://kha0213.github.io/
  * instagram : https://www.instagram.com/moon_maria__/
  */
+@TableGenerator(
+        name = "Category_Generator",
+        table = "JPA_Sequence",
+        pkColumnValue = "Category_Seq",
+        allocationSize = 1
+)
 @SqlResultSetMapping(
         name="CategoryHierarchicalDto",
         classes = @ConstructorResult(
@@ -27,17 +33,20 @@ import java.util.List;
                         @ColumnResult(name="parent_category_id", type = Long.class)
                 })
 )
-@Entity
 @Getter
 @NoArgsConstructor
+//@Entity
 public class Category {
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue(strategy = GenerationType.TABLE,
+            generator = "Category_Generator")
     @Column(name = "Category_Id")
     private Long id;
 
     private String name;
 
-    private int level;
+    @Column(name = "levels")
+    private int levels;
 
 //    @ManyToMany(mappedBy = "categories")
 //    private List<Item> items = new ArrayList<>();
@@ -54,7 +63,7 @@ public class Category {
 
     public Category(String name, Category parent) {
         this.name = name;
-        this.level = parent.level + 1;
+        this.levels = parent.levels + 1;
         this.parent = parent;
     }
 
@@ -63,7 +72,7 @@ public class Category {
         return "[Category]" +
                 "id=" + id +
                 ", name=" + name +
-                ", level=" + level +
+                ", level=" + levels +
                 ", parent.id=" + (parent==null?null:parent.id) +
                 ", child.size=" + (child==null?0:child.size())
                 ;

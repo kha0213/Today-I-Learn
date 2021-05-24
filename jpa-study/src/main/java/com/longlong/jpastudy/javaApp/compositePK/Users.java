@@ -11,7 +11,7 @@ import java.io.Serializable;
  * Date: 2021-05-02
  * Time: 오후 11:04
  */
-@Entity
+//@Entity
 @Getter
 @Setter
 @EqualsAndHashCode

@@ -14,10 +14,10 @@ import java.util.Set;
  * Blog : https://kha0213.github.io/
  * instagram : https://www.instagram.com/moon_maria__/
  */
-//@Entity
+@Entity
 @TableGenerator(
         name = "Student_Generator",
-        table = "Student_Sequence",
+        table = "JPA_Sequence",
         pkColumnValue = "Student_Seq",
         allocationSize = 1
 )
@@ -34,20 +34,26 @@ public class Student extends BaseEntity {
     private Long id;
 
     private String name;
+    @Enumerated(value = EnumType.STRING)
+    private Classes classes;
+
+    private int grades;
 
     @ManyToMany
     @JoinTable(
             name = "STUDENT_SUBJECT",
-            joinColumns = @JoinColumn(name = "student_id"),
-            inverseJoinColumns = @JoinColumn(name = "subject_id")
+            joinColumns = @JoinColumn(name = "subject_id"),
+            inverseJoinColumns = @JoinColumn(name = "student_id")
     )
     private Set<Subject> subjects = new HashSet<>();
 
-    @OneToOne
-    private AddressByMyBlog address;
+    //@OneToOne
+    //private Address address;
 
     public Student(String name) {
         this.name = name;
+        this.grades = (int)(Math.random() * 100);
+        this.classes = grades >= 50 ? Classes.ADVANCE : Classes.BASIC;
     }
 
     public void addSubject(Subject subject) {

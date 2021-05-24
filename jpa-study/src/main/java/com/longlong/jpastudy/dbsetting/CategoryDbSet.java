@@ -13,7 +13,7 @@ import javax.persistence.Persistence;
  * Date: 2021-05-20
  * Time: 오후 8:56
  */
-public class DbSetting {
+public class CategoryDbSet {
     public static void setting(EntityManager em) throws Exception {
         categorySetting(em);
     }

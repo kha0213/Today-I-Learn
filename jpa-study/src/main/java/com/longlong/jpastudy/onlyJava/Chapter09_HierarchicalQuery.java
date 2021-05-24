@@ -1,10 +1,8 @@
 package com.longlong.jpastudy.onlyJava;
 
-import com.longlong.jpastudy.dbsetting.DbSetting;
+import com.longlong.jpastudy.dbsetting.CategoryDbSet;
 import com.longlong.jpastudy.dto.CategoryHierarchicalDto;
 import com.longlong.jpastudy.vo.Category;
-import com.longlong.jpastudy.vo.Member;
-import com.longlong.jpastudy.vo.item.embedded.Address;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -29,7 +27,7 @@ public class Chapter09_HierarchicalQuery {
         try {
             tx.begin();
             // DB 세팅
-            DbSetting.setting(em);
+            CategoryDbSet.setting(em);
 
             logic(em, tx);
             tx.commit();

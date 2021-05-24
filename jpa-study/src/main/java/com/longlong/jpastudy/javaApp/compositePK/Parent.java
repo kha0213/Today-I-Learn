@@ -14,7 +14,7 @@ import javax.persistence.Id;
  * Blog : https://kha0213.github.io/
  * instagram : https://www.instagram.com/moon_maria__/
  */
-@Entity
+//@Entity
 @Getter
 @Setter
 public class Parent {

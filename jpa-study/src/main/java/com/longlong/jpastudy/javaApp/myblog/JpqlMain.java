@@ -1,14 +1,18 @@
 package com.longlong.jpastudy.javaApp.myblog;
 
-
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-
-public class OneToOne_Main {
+/**
+ * Created by Kim Young Long.
+ * Date : 2021-05-24.
+ * Github : https://github.com/kha0213
+ * Blog : https://kha0213.github.io/
+ * instagram : https://www.instagram.com/moon_maria__/
+ */
+public class JpqlMain {
     public static void main(String[] args) {
         System.out.println("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
         System.out.println("start!!");
@@ -20,6 +24,7 @@ public class OneToOne_Main {
 
         try {
             tx.begin();
+            DbSetting.setting(em);
             logic(em);
             tx.commit();
         } catch (Exception e) {
@@ -32,29 +37,7 @@ public class OneToOne_Main {
         emf.close();
     }
 
-    public static void logic(EntityManager em) throws Exception {
-        Student studentA = new Student("studentA");
-        em.persist(studentA);
-        Student studentB = new Student("studentB");
-        em.persist(studentB);
-        AddressByMyBlog address1 = new AddressByMyBlog("munjeoug", "158-200", "seoul");
-        em.persist(address1);
-        AddressByMyBlog address2 = new AddressByMyBlog("garak", "129-120", "seoul");
-        em.persist(address2);
-        //studentA.setAddress(address1);
-        //studentB.setAddress(address2);
+    private static void logic(EntityManager em) {
 
-
-        em.flush();
-        em.clear();
-
-        System.out.println("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
-        System.out.println("studentA = " + studentA);
-        System.out.println("studentB = " + studentB);
-        System.out.println("address1 = " + address1);
-        System.out.println("address2 = " + address2);
-        System.out.println("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
     }
-
-
 }

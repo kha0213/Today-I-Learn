@@ -17,15 +17,20 @@ import java.util.Set;
 @ToString(exclude = "subject")
 @AllArgsConstructor
 @NoArgsConstructor
-//@Entity
+@Entity
 public class Teacher {
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue
     @Column(name = "teacher_id")
     private Long id;
 
     private String name;
 
+    @Enumerated(value = EnumType.STRING)
+    private Classes classes;
+
     @ManyToOne
+    @JoinColumn(name = "subject_id")
     private Subject subject;
 
     public Teacher(String name) {

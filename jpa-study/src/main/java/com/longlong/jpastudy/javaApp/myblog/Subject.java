@@ -19,10 +19,17 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-//@Entity
+@TableGenerator(
+        name = "Subject_Generator",
+        table = "JPA_Sequence",
+        pkColumnValue = "Subject_Seq",
+        allocationSize = 1
+)
+@Entity
 public class Subject {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.TABLE,
+            generator = "Subject_Generator")
     @Column(name = "subject_id")
     private Long id;
 
