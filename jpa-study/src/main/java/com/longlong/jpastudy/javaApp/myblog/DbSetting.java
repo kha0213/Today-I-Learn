@@ -21,6 +21,7 @@ public class DbSetting {
         Subject english = new Subject("english");
         em.persist(english);
         Subject korean = new Subject("korean");
+        em.persist(korean);
 
         // 선생님 세팅
         Teacher mathTeacherA = new Teacher("TmathA");
