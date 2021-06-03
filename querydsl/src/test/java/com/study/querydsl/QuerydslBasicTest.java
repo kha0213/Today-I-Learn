@@ -145,6 +145,9 @@ public class QuerydslBasicTest {
                 .offset(2) // 시작이 0부터
                 .limit(5)
                 .fetch();
+        for (Member member1 : members) {
+            System.out.println("member = " + member1);
+        }
         assertThat(members.size()).isEqualTo(5);
         assertThat(members.get(0).getAge()).isEqualTo(70); // 90 80 70
     }
@@ -196,12 +199,18 @@ public class QuerydslBasicTest {
 
 
         //when
-        queryFactory
+        final List<Tuple> tuples = queryFactory
                 .select(team.name, member.age.avg())
                 .from(member)
                 .join(member.team, team)
                 .groupBy(team.name)
+                .having(member.age.avg().gt(10))
+                .fetch();
 
+        for (Tuple tuple : tuples) {
+            System.out.println("team.name = " + tuple.get(team.name));
+            System.out.println("age.avg() = " + tuple.get(member.age.avg()));
+        }
 
         //then
     }
