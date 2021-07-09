@@ -10,4 +10,5 @@ public class Toyproject1Application {
         SpringApplication.run(Toyproject1Application.class, args);
     }
 
+    
 }

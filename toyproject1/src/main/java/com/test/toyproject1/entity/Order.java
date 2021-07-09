@@ -103,4 +103,25 @@ public class Order {
         }
         return totalPrice;
     }
+
+    /**
+     * 대표상품 이름
+     */
+    public String getOrderItemName() {
+        if (this.orderItems.size() == 0) {
+            return null;
+        }
+        return orderItems.get(0).getItem().getName();
+    }
+
+    /**
+     * 대표상품 주문수량
+     * @return
+     */
+    public int getOrderItemCount() {
+        if (this.orderItems.size() == 0) {
+            return 0;
+        }
+        return orderItems.get(0).getCount();
+    }
 }
