@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Item Form</title>
+  <script>
+    document.frm.action = '/items/new';
+
+  </script>
+</head>
+<body>
+<form name="frm" method="post">
+
+  <table>
+    <tr>
+      <th>상품명</th>
+      <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+      <th>가격</th>
+      <td><input type="number" name="price"></td>
+    </tr>
+    <tr>
+      <th>수량</th>
+      <td><input type="number" name="stockQuantity"></td>
+    </tr>
+    <tr>
+      <td th:colspan="2"><input type="submit"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
