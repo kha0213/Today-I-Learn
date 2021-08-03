@@ -35,7 +35,7 @@ import java.util.List;
 )
 @Getter
 @NoArgsConstructor
-@Entity
+//@Entity
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE,

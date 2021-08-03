@@ -13,7 +13,7 @@ import javax.persistence.Entity;
  * Blog : https://kha0213.github.io/
  * instagram : https://www.instagram.com/moon_maria__/
  */
-@Entity
+//@Entity
 @Getter
 @Setter
 @DiscriminatorValue("Movie")

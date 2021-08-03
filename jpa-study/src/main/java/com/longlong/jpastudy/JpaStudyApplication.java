@@ -10,11 +10,7 @@ public class JpaStudyApplication {
     public static void main(String[] args) {
         SpringApplication app = new SpringApplication(JpaStudyApplication.class);
         app.setWebApplicationType(WebApplicationType.NONE);
-
-
-
         app.run(args);
-
     }
 
 }
