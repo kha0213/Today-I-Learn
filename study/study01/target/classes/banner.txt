@@ -1,9 +1,0 @@
-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-Hello~
-Young Long Spring Boot
-application.version : ${application.version}
-application.formatted-version : ${application.formatted-version}
-spring-boot.version : ${spring-boot.version}
-spring-boot.formatted-version : ${spring-boot.formatted-version}
-application.title : ${application.title}
-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

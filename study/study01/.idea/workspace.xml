@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e5d012b-5055-412f-a449-ce813e41d01f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../client-server" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/client-server-program.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/MyClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/MyServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/TestEnum$Fruit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/TestEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/AutoFileCreate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/ConfigForCreateImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/Create.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/CreateFileSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/FileBuilder$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/FileBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/MethodInClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/TestMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/constant/BaseConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/constant/CreateCRUD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/autoFileCreate/constant/FileType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/goormTest/Test01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/goormTest/Test02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/goormTest/Test03$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/goormTest/Test03$WhatCha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/goormTest/Test03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/goormTest/Test04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/out/production/client-server-program/goormTest/Test05.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/MyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/MyServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/TestEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/AutoFileCreate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/ConfigForCreateImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/Create.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/CreateFileSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/FileBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/MethodInClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/TestMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/constant/BaseConstant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/constant/CreateCRUD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/constant/FileType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/autoFileCreate/vo/Users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/goormTest/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/goormTest/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/goormTest/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/goormTest/Test04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client-server-program/src/goormTest/Test05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_43.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_43.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_18_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_6_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/study01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/study_logger/Study01Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/long-banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/study_logger/Study01ApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1xXDmxAznyl4N1tSKsctez5h9bV" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../aws-boot" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e5d012b-5055-412f-a449-ce813e41d01f" name="Default Changelist" comment="" />
+      <created>1630492702817</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630492702817</updated>
+      <workItem from="1630492705144" duration="108000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
