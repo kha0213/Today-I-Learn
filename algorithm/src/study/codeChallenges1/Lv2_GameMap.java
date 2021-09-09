@@ -13,12 +13,12 @@ public class Lv2_GameMap {
 
         dfs(maps,x,y,Integer.MAX_VALUE ,0, visited);
 
-        return answer;
+        return 0;
     }
 
     private static void dfs(int[][] maps, int x, int y,int min, int cnt, boolean[][] visited) {
         if(x < 0 || x >= maps.length || y < 0 || y >= maps[0].length || maps[x][y] == 0) return;
-        if(x == maps.length-1 && y == maps[0].length-1) return Math.min(min,cnt);
+        //if(x == maps.length-1 && y == maps[0].length-1) return Math.min(min,cnt);
 
     }
 
