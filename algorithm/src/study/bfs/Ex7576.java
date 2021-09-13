@@ -45,7 +45,7 @@ public class Ex7576 {
         }
         int count = 0;
 
-        while (true) {
+        while (!queue.isEmpty()) {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 int[] poll = queue.poll();
@@ -58,13 +58,11 @@ public class Ex7576 {
                     }
                 }
             }
-            if (queue.size() == 0) {
-                break;
-            }
             count++;
         }
+        count--;
         return Arrays.stream(map)
-                .flatMapToInt(array -> Arrays.stream(array))
+                .flatMapToInt(Arrays::stream)
                 .noneMatch(grow -> grow == 0)? count : -1;
     }
 }
