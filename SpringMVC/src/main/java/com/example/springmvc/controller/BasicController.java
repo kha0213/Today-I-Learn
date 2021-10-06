@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 import java.time.LocalDateTime;
@@ -16,6 +17,11 @@ import java.util.Map;
 
 @Controller
 public class BasicController {
+
+    @GetMapping(value = "/hello2")
+    public @ResponseBody String hello() {
+        return "hello2";
+    }
 
     @GetMapping(value = "/basic/text-basic")
     public String textBasic(Model model) {
