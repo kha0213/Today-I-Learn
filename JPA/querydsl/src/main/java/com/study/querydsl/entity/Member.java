@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 
+import static javax.persistence.CascadeType.ALL;
+
 /**
  * Created by Kim Young Long.
  * My Git Blog : https://kha0213.github.io/
@@ -25,7 +27,7 @@ public class Member {
 
     private int age;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = ALL)
     @JoinColumn(name = "team_id")
     private Team team;
 

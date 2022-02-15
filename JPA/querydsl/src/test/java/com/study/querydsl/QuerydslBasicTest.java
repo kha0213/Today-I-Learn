@@ -5,20 +5,23 @@ import com.querydsl.core.Tuple;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.study.querydsl.entity.Member;
 import com.study.querydsl.entity.QMember;
-import com.study.querydsl.entity.QTeam;
 import com.study.querydsl.entity.Team;
+import com.study.querydsl.entity.dto.MemberDto;
+import com.study.querydsl.entity.dto.QMemberDto;
+import org.hibernate.Hibernate;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 
+import static com.querydsl.jpa.JPAExpressions.select;
 import static com.study.querydsl.entity.QMember.member;
-import static com.study.querydsl.entity.QTeam.*;
+import static com.study.querydsl.entity.QTeam.team;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -88,6 +91,20 @@ public class QuerydslBasicTest {
 
     // 검색 조건 쿼리
     @Test
+    public void search2() {
+
+        final List<Member> members = queryFactory
+                .selectFrom(member)
+                .where(member.username.contains("%member%")
+                        , member.age.gt(10), null )
+                .fetch();
+        for (Member m : members) {
+            assertThat(m.getAge()).isGreaterThan(10);
+        }
+    }
+
+    // 검색 조건 쿼리
+    @Test
     public void resultFetch () {
         final List<Member> fetch = queryFactory
                 .selectFrom(member)
@@ -131,7 +148,7 @@ public class QuerydslBasicTest {
                 .orderBy(member.username.desc(), member.age.asc().nullsLast())
                 .fetch();
 
-        assertThat(members.get(0).getUsername()).isEqualTo("member10");
+        assertThat(members.get(0).getUsername()).isEqualTo("member9");
     }
 
     /**
@@ -195,9 +212,6 @@ public class QuerydslBasicTest {
 
     @Test
     public void group() throws Exception {
-        //given
-
-
         //when
         final List<Tuple> tuples = queryFactory
                 .select(team.name, member.age.avg())
@@ -211,7 +225,186 @@ public class QuerydslBasicTest {
             System.out.println("team.name = " + tuple.get(team.name));
             System.out.println("age.avg() = " + tuple.get(member.age.avg()));
         }
+    }
 
-        //then
+    @Test
+    public void join() throws Exception {
+        List<Member> result = queryFactory
+                .selectFrom(member)
+                .join(member.team, team)
+                .where(team.name.eq("teamA"))
+                .fetch();
+        assertThat(result).extracting("username")
+                .containsExactly("member0", "member2", "member4", "member6", "member8");
+    }
+
+    @Test
+    public void theta_join() throws Exception {
+        em.persist(new Member("teamA"));
+        em.persist(new Member("teamB"));
+
+        List<Member> result = queryFactory
+                .selectFrom(member)
+                .join(team)
+                .on(member.username.eq(team.name))
+                .fetch();
+        assertThat(result.size()).isEqualTo(2);
+        assertThat(result).extracting("username")
+                .containsExactly("teamA", "teamB");
+    }
+
+    @Test
+    @DisplayName("페치조인")
+    public void fetch_join() throws Exception {
+        // given
+        em.flush();
+        em.clear();
+        // when
+        List<Member> result = queryFactory.select(member)
+                .from(member)
+                .join(member.team, team).fetchJoin()
+                .where(team.name.eq("teamA"))
+                .fetch();
+
+        // then
+        for (Member member1 : result) {
+            assertThat(Hibernate.isInitialized(member1.getTeam())).isTrue();
+        }
+    }
+
+    @Test
+    @DisplayName("서브쿼리 - 나이가 가장 많은 회원 조회")
+    public void sub_query() throws Exception {
+        // given
+        QMember subMember = new QMember("sub_member");
+        // when
+        Member result = queryFactory.selectFrom(member)
+                .where(
+                        member.age.eq(select(subMember.age.max())
+                                .from(subMember))
+                )
+                .fetchOne();
+        // then
+        assertThat(result.getAge()).isEqualTo(90);
+    }
+
+    @Test
+    @DisplayName("서브쿼리 - where 절에")
+    public void sub_query2() throws Exception {
+        // given
+        QMember subMember = new QMember("sub_member");
+        // when
+        List<Member> result = queryFactory.selectFrom(member)
+                .where(
+                        member.age.goe(select(subMember.age.avg())
+                                .from(subMember))
+                )
+                .orderBy(member.age.asc())
+                .fetch();
+        // then
+        assertThat(result.size()).isEqualTo(5);
+        assertThat(result).extracting("age")
+                .containsExactly(50, 60, 70, 80, 90);
+    }
+
+    @Test
+    @DisplayName("서브쿼리 - select 절에")
+    public void sub_query3() throws Exception {
+        // given
+        // when
+        List<Tuple> result = queryFactory
+                .select(
+                        member.id,
+                        member.username,
+                        member.age,
+                        select(team.name)
+                                .from(team)
+                                .where(team.eq(member.team)))
+                .from(member)
+                .where(member.team.name.eq("teamA"))
+                .orderBy(member.age.asc())
+                .fetch();
+        // then
+        result.stream().map(tuple -> tuple.get(3, String.class)).forEach(
+                tuple -> assertThat(tuple).isEqualTo("teamA")
+        );
+    }
+
+    @Test
+    @DisplayName("Dto로 바로 조회 (jpql)")
+    public void findDtoByJpql() throws Exception {
+        // when
+        List<MemberDto> result = em.createQuery(
+                "SELECT " +
+                        "   new com.study.querydsl.entity.dto.MemberDto(m.username, m.age, t.name) " +
+                        "FROM Member m " +
+                        "  left outer join m.team as t", MemberDto.class).getResultList();
+        // then
+        assertThat(result.get(0).getUsername()).isEqualTo("member0");
+        assertThat(result.get(0).getAge()).isEqualTo(0);
+        assertThat(result.get(0).getTeamName()).isEqualTo("teamA");
+
+    }
+
+    @Test
+    @DisplayName("Dto로 바로 조회 (쿼리프로젝션)")
+    public void findDtoByQueryProjection() throws Exception {
+        // when
+        List<MemberDto> result = queryFactory
+                .select(new QMemberDto(member.username, member.age, team.name))
+                .from(member)
+                .join(member.team, team)
+                .fetch();
+
+        // then
+        assertThat(result.get(0).getUsername()).isEqualTo("member0");
+        assertThat(result.get(0).getAge()).isEqualTo(0);
+        assertThat(result.get(0).getTeamName()).isEqualTo("teamA");
+    }
+
+    @Test
+    @DisplayName("튜플연습1")
+    public void tuple1() throws Exception {
+        // when
+        List<String> result = queryFactory
+                .select(member.username)
+                .from(member)
+                .fetch();
+        // then
+        assertThat(result)
+                .contains("member0", "member1", "member2", "member3", "member4", "member5");
+    }
+
+    @Test
+    @DisplayName("벌크 연습1")
+    public void bulk1() throws Exception {
+        // when
+        long execute = queryFactory
+                .update(member)
+                .set(member.username, "비회원")
+                .where(member.age.gt(20))
+                .execute();
+        // then
+        List<Member> members = queryFactory.selectFrom(member).fetch();
+
+        assertThat(execute).isEqualTo(members.stream().filter(m -> m.getAge() > 20).count());
+
+    }
+    
+    @Test
+    @DisplayName("벌크 add")
+    public void bulk_add() throws Exception {
+        // when
+        long execute = queryFactory
+                .update(member)
+                .set(member.age, member.age.add(100))
+                .where(member.username.eq("member1"))
+                .execute();
+
+        List<Member> members = queryFactory.selectFrom(member).fetch();
+
+        // then
+        Member findMember = members.stream().filter(m -> m.getUsername().equals("member1")).findAny().get();
+        assertThat(findMember.getAge()).isGreaterThan(100);
     }
 }

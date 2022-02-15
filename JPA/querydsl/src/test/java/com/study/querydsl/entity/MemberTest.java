@@ -2,17 +2,13 @@ package com.study.querydsl.entity;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Commit;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
-
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created by Kim Young Long.
@@ -24,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @Transactional
 class MemberTest {
 
-    @Autowired
+    @PersistenceContext
     EntityManager em;
 
     @Test
@@ -61,6 +57,5 @@ class MemberTest {
         for (int i = 0; i < members.size(); i++) {
             Assertions.assertThat(members.get(i).getId()).isEqualTo(memberList.get(i).getId());
         }
-
     }
 }
