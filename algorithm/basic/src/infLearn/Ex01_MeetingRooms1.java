@@ -27,7 +27,7 @@ public class Ex01_MeetingRooms1 {
     }
 
     public static boolean solve(Interval[] intervals) {
-        List<Interval> collect = Arrays.stream(intervals).sorted((o1, o2) -> o1.start - o2.start).collect(Collectors.toList());
+        List<Interval> collect = Arrays.stream(intervals).sorted(Comparator.comparingInt(o -> o.start)).collect(Collectors.toList());
         for (int i=0; i<collect.size() - 1; i++) {
             if(collect.get(i).end > collect.get(i+1).start) {
                 return false;
