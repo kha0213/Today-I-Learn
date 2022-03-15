@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Counter_class extends Component {
+class CounterClass extends Component {
     // constructor(props) {
     //     super(props);
     //     //state 의 초깃값 설정하기
@@ -35,4 +35,4 @@ class Counter_class extends Component {
 }
 
 
-export default Counter_class;
+export default CounterClass;
