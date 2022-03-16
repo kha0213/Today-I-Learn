@@ -5,19 +5,27 @@ import {useState} from "react";
 function App() {
     const [movieTitle, setMovieTitle] = useState('');
     const [movieYear, setMovieYear] = useState('');
+    const [movieId, setMovieId] = useState('');
     const [movies, setMovies] = useState([
-        {title: 'Iron man', year: 2001},
-        {title: 'Mission Impossible', year: 2002},
-        {title: 'Mother', year: 2008},
-        {title: 'Spider man', year: 2020}
+        {title: 'Iron man', year: 2001, id: Date.now()},
+        {title: 'Mission Impossible', year: 2002, id: Date.now()},
+        {title: 'Mother', year: 2008, id: Date.now()},
+        {title: 'Spider man', year: 2020, id: Date.now()}
         ]
     );
 
-    const renderMovies = movies.map(movie => {
+    const removeMovie = id => {
+        setMovies(movies.filter(movie => movie.title !== id));
+    }
+
+    const renderMovies = movies.length ? movies.map(movie => {
         return (
-            <Movie movie={movie} key={movie.title}/>
+            <Movie movie={movie}
+                   key={movie.title}
+                   id={movie.id}
+                   removeMovie={ removeMovie }/>
         );
-    });
+    }) : '추가된 영화가 없습니다.';
 
     const addMovie = (event) => {
         event.preventDefault();
@@ -26,6 +34,7 @@ function App() {
         setMovies([...movies, {
             title: movieTitle,
             year: movieYear,
+            id: movieId
         }])
         setMovieTitle('');
         setMovieYear('');

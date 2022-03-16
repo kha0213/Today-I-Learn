@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const Movie = ( {movie, removeMovie} ) => {
     return (
         <div className={"movie"}>
