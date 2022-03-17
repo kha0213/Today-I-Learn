@@ -1,19 +1,18 @@
-import './App.css';
-import Movie from "./conponents/Movie";
-import {useState} from "react";
-import InputField from "./conponents/InputField";
+import React, {useState} from 'react';
+import Movie from "../conponents/Movie";
+import InputField from "../conponents/InputField";
 
-function App() {
+const Movies = () => {
     const [titleError, setTitleError] = useState('');
     const [yearError, setYearError] = useState('');
     const [movieTitle, setMovieTitle] = useState('');
     const [movieYear, setMovieYear] = useState('');
     const [movieId, setMovieId] = useState(5);
     const [movies, setMovies] = useState([
-        {title: 'Iron man', year: 2001, id: 1},
-        {title: 'Mission Impossible', year: 2002, id: 2},
-        {title: 'Mother', year: 2008, id: 3},
-        {title: 'Spider man', year: 2020, id: 4}
+            {title: 'Iron man', year: 2001, id: 1},
+            {title: 'Mission Impossible', year: 2002, id: 2},
+            {title: 'Mother', year: 2008, id: 3},
+            {title: 'Spider man', year: 2020, id: 4}
         ]
     );
 
@@ -63,28 +62,27 @@ function App() {
     }
 
     return (
-    <div className="App">
-        <h1>Movie List ! </h1>
-        {renderMovies}
-        <form onSubmit={addMovie}>
-            <InputField
-                type="text"
-                value={movieTitle}
-                placeholder="영화제목"
-                onChange={e => setMovieTitle(e.target.value)}
-                errorMessage={titleError}
-            />
-            <InputField
-                type="number"
-                value={movieYear}
-                placeholder="영화개봉년도"
-                onChange={e => setMovieYear(e.target.value)}
-                errorMessage={yearError}
-            />
-            <button type={"submit"}>영화추가</button>
-        </form>
-    </div>
-  );
+        <div className="App">
+            <h1>Movie List ! </h1>
+            {renderMovies}
+            <form onSubmit={addMovie}>
+                <InputField
+                    type="text"
+                    value={movieTitle}
+                    placeholder="영화제목"
+                    onChange={e => setMovieTitle(e.target.value)}
+                    errorMessage={titleError}
+                />
+                <InputField
+                    type="number"
+                    value={movieYear}
+                    placeholder="영화개봉년도"
+                    onChange={e => setMovieYear(e.target.value)}
+                    errorMessage={yearError}
+                />
+                <button type={"submit"}>영화추가</button>
+            </form>
+        </div>
+    );
 }
-
-export default App;
+export default Movies;

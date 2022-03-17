@@ -1,17 +1,27 @@
 import "./App.css";
-import {Component} from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Navbar from "./conponents/Navbar";
+import Movies from "./page/Movies";
+import Users from "./page/Users";
+import Main from "./page/Main";
+import User from "./page/User";
 
 function App() {
-    const name = "리액트";
+
     return (
-        <div
-            className={"react"}
-        >
-            <h1>{name}</h1>
-            <div>
-                <div>22222</div>
+        <BrowserRouter>
+            <div className={"APP container"}>
+                <Navbar/>
+                    <Routes>
+                        <>
+                        <Route path={"/movies"} element={<Movies/>}/>
+                        <Route path={"/users"}  element={<Users/>}/>
+                        <Route path={"/users/:id"}  element={<User/>}/>
+                        <Route path="/"   element={<Main/>}/>
+                        </>
+                    </Routes>
             </div>
-        </div>
+        </BrowserRouter>
     );
 }
 
