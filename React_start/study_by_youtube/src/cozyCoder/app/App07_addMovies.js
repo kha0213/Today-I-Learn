@@ -1,7 +1,7 @@
-import './App.css';
-import Movie from "./conponents/Movie";
+import '../../App.css';
+import Movie from "../conponents/Movie";
 import {useState} from "react";
-import InputField from "./conponents/InputField";
+import InputField from "../conponents/InputField";
 
 function App() {
     const [titleError, setTitleError] = useState('');

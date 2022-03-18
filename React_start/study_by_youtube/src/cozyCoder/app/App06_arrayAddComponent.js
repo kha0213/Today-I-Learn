@@ -1,4 +1,5 @@
-import './App.css';
+import '../../App.css';
+import Movie from "../conponents/Movie";
 
 function App() {
     const movies = [
@@ -9,21 +10,13 @@ function App() {
 
     const renderMovies = movies.map(movie => {
         return (
-            <div key={movie.title} className={"movie"}>
-                <div className={"title"}>{movie.title}</div>
-                <div className={"year"}>{movie.year}</div>
-            </div>
+            <Movie movie={movie} key={movie.title}/>
         );
     });
     return (
     <div className="App">
         <h1>Movie List ! </h1>
-
         {renderMovies}
-        {/*<div className={"movie"}>
-            <div className={"title"}>{movies[0].title}</div>
-            <div className={"year"}>{movies[0].year}</div>
-        </div>*/}
     </div>
   );
 }

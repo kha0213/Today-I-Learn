@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App02_Timer from "./starCoding/App02_Timer";
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App02_Timer />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,10 +1,10 @@
-import "./App.css";
+import "../../App.css";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Navbar from "./cozyCoder/conponents/Navbar";
-import Movies from "./cozyCoder/page/Movies";
-import Users from "./cozyCoder/page/Users";
-import Main from "./cozyCoder/page/Main";
-import User from "./cozyCoder/page/User";
+import Navbar from "../conponents/Navbar";
+import Movies from "../page/Movies";
+import Users from "../page/Users";
+import Main from "../page/Main";
+import User from "../page/User";
 
 function App() {
 
