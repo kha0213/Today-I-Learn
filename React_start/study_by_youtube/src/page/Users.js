@@ -16,10 +16,6 @@ const Users = () => {
             });
     }, []);
 
-    useEffect(() => {
-        console.log(users);
-    }, [users]);
-
     return (
         <>
             <h1>유저</h1>
