@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Es6Grammer2 from "./learningReact/ch02/Es6Grammer2";
+import App from "./reactBasic/ch07/App";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Es6Grammer2/>
+        <App/>
     </React.StrictMode>,
     document.getElementById('root')
 );
