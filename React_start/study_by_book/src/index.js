@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App03UseRef from "./starCoding/App03_useRef";
-
+import Es6Grammer2 from "./learningReact/ch02/Es6Grammer2";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App03UseRef />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <Es6Grammer2/>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
