@@ -20,7 +20,7 @@ const Info = () => {
             console.log('cleanup')
             console.log(name)
         }
-    }, []);
+    }, [name, nickname]);
 
     const onChange = e => {
         dispatch(e.target)
