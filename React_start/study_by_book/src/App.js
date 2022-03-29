@@ -1,16 +1,11 @@
 import './App.css';
-import Info from "./reactBasic/ch08/Info";
-import {useState} from "react";
+import Average from "./reactBasic/ch08/Average";
 
 function App() {
-    const [visible, setVisible] = useState(false);
+
   return (
     <div className="App">
-        <button onClick={() => setVisible(!visible) }>
-            {visible? '숨기기' : '보이기'}
-        </button>
-        <hr/>
-        {visible && <Info/>}
+        <Average/>
     </div>
   );
 }
