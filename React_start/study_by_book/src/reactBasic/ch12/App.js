@@ -45,7 +45,7 @@ const App = () => {
             })
             nextId.current += 1
         },
-        [data, form.name, form.username]
+        [form.name, form.username]
     )
 
     // 항목을 삭제하는 함수
@@ -57,7 +57,7 @@ const App = () => {
                 })
             )
         },
-        [data]
+        []
     )
 
     return (
