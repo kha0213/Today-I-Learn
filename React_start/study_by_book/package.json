@@ -20,6 +20,7 @@
     "react-scripts": "5.0.0",
     "react-virtualized": "^9.22.3",
     "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.9",
     "sass": "^1.49.9",
     "scss": "^0.2.4",
     "styled-components": "^5.3.5",

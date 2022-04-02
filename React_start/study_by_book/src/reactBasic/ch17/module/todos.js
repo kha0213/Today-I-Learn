@@ -57,6 +57,20 @@ function todos(state= initialState, action) {
                 ...state,
                 todos: state.todos.concat(action.todo)
             }
-
+        case TOGGLE:
+            return {
+                ...state,
+                todos: state.todos.map(todo =>
+                    todo.id === action.id ? {...todo, done: !todo.done } : todo
+                )
+            }
+        case REMOVE:
+            return {
+                ...state,
+                todos: state.todos.filter(todo =>todo.id !== action.id)
+            }
+        default: return state;
     }
 }
+
+export default todos;
