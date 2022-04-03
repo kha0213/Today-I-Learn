@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./reactBasic/ch17/App";
+import App from "./reactBasic/ex01/App";
 import {createStore} from "redux";
-import rootReducer from "./reactBasic/ch17/module";
+import rootReducer from "./reactBasic/ex01/modules";
 import {Provider} from "react-redux";
 
 
