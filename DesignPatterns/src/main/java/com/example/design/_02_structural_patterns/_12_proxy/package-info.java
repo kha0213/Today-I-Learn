@@ -1,0 +1,1 @@
+package com.example.design._02_structural_patterns._12_proxy;
