@@ -1,6 +1,6 @@
 package com.example.design._03_behavioral_patterns._14_command._02_after;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._14_command._01_before.Game;
+import com.example.design._03_behavioral_patterns._14_command._01_before.Game;
 
 public class MyApp {
 

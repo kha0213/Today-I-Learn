@@ -1,6 +1,6 @@
 package com.example.design._03_behavioral_patterns._13_chain_of_responsibilities._02_after;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._13_chain_of_responsibilities._01_before.Request;
+import com.example.design._03_behavioral_patterns._13_chain_of_responsibilities._01_before.Request;
 
 public class Client {
 

@@ -1,7 +1,7 @@
 package com.example.design._01_creational_patterns._02_factory_method._03_java;
 
-import me.whiteship.designpatterns._01_creational_patterns._02_factory_method._02_after.Blackship;
-import me.whiteship.designpatterns._01_creational_patterns._02_factory_method._02_after.Whiteship;
+import com.example.design._01_creational_patterns._02_factory_method._02_after.Blackship;
+import com.example.design._01_creational_patterns._02_factory_method._02_after.Whiteship;
 
 public class SimpleFactory {
 

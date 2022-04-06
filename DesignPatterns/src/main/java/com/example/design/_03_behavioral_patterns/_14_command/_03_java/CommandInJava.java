@@ -1,7 +1,7 @@
 package com.example.design._03_behavioral_patterns._14_command._03_java;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._14_command._01_before.Game;
-import me.whiteship.designpatterns._03_behavioral_patterns._14_command._01_before.Light;
+import com.example.design._03_behavioral_patterns._14_command._01_before.Game;
+import com.example.design._03_behavioral_patterns._14_command._01_before.Light;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

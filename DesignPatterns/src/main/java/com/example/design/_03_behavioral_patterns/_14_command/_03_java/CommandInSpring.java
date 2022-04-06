@@ -1,6 +1,6 @@
 package com.example.design._03_behavioral_patterns._14_command._03_java;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._14_command._02_after.Command;
+import com.example.design._03_behavioral_patterns._14_command._02_after.Command;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;

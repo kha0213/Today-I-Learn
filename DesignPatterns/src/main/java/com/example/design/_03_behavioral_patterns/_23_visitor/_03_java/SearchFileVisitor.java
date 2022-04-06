@@ -1,6 +1,6 @@
 package com.example.design._03_behavioral_patterns._23_visitor._03_java;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._23_visitor._02_after.Triangle;
+import com.example.design._03_behavioral_patterns._23_visitor._02_after.Triangle;
 
 import java.io.IOException;
 import java.nio.file.*;

@@ -1,6 +1,6 @@
 package com.example.design._03_behavioral_patterns._14_command._02_after;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._14_command._01_before.Light;
+import com.example.design._03_behavioral_patterns._14_command._01_before.Light;
 
 public class LightOffCommand implements Command {
 

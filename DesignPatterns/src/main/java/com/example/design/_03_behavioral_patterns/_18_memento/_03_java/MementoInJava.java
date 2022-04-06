@@ -1,6 +1,6 @@
 package com.example.design._03_behavioral_patterns._18_memento._03_java;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._18_memento._01_before.Game;
+import com.example.design._03_behavioral_patterns._18_memento._01_before.Game;
 
 import java.io.*;
 

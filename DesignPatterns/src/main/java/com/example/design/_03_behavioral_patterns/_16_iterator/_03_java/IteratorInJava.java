@@ -1,7 +1,7 @@
 package com.example.design._03_behavioral_patterns._16_iterator._03_java;
 
-import me.whiteship.designpatterns._03_behavioral_patterns._16_iterator._01_before.Post;
-import me.whiteship.designpatterns._03_behavioral_patterns._16_iterator._02_after.Board;
+import com.example.design._03_behavioral_patterns._16_iterator._01_before.Post;
+import com.example.design._03_behavioral_patterns._16_iterator._02_after.Board;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;

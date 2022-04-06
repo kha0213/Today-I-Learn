@@ -1,9 +1,7 @@
 package com.example.design._01_creational_patterns._02_factory_method._02_after;
 
-import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._01_before.WhiteAnchor;
-import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._01_before.WhiteWheel;
-import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._02_after.Anchor;
-import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._02_after.Wheel;
+import com.example.design._01_creational_patterns._03_abstract_factory._02_after.Anchor;
+import com.example.design._01_creational_patterns._03_abstract_factory._02_after.Wheel;
 
 public class Ship {
 
