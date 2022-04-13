@@ -1,8 +1,8 @@
 package hello.jdbc.repository;
 
 import hello.jdbc.domain.Member;
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.sql.SQLException;
@@ -10,9 +10,19 @@ import java.util.NoSuchElementException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 
 class MemberRepositoryV0Test {
+
+    @BeforeEach
+    void before() {
+        MemberRepositoryV0 repository = new MemberRepositoryV0();
+    }
+
+    @AfterEach
+    void after() throws SQLException {
+        MemberRepositoryV0 repository = new MemberRepositoryV0();
+        repository.delete("hello1");
+    }
 
     @Test
     void crud() throws SQLException {

@@ -2,6 +2,7 @@ package hello.jdbc.repository;
 
 import com.zaxxer.hikari.HikariDataSource;
 import hello.jdbc.domain.Member;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -17,7 +18,7 @@ class MemberRepositoryV1Test {
     private MemberRepositoryV1 repository;
 
     @BeforeEach
-    void datasource() {
+    void datasource() throws SQLException {
         // 기본 DriverManager 항상 새로운 커넥션 획득
         //DataSource dataSource = new DriverManagerDataSource(URL, USERNAME, PASSWORD);
 
@@ -28,6 +29,11 @@ class MemberRepositoryV1Test {
         dataSource.setPassword(PASSWORD);
         dataSource.setPoolName("히카리Pool");
         repository = new MemberRepositoryV1(dataSource);
+    }
+
+    @AfterEach
+    void after() throws SQLException {
+        repository.delete("hello1");
     }
 
     @Test
