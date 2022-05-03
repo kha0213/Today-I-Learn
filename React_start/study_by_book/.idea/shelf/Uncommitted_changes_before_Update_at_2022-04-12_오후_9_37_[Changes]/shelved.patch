@@ -1,0 +1,38 @@
+Index: src/reactBasic/ch18/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\r\nimport CounterContainer from \"./containers/CounterContainerV1\";\r\n\r\nconst App = () => {\r\n    return (\r\n        <div>\r\n            <CounterContainer/>\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default App;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/reactBasic/ch18/App.js b/src/reactBasic/ch18/App.js
+--- a/src/reactBasic/ch18/App.js	(revision b25ee8ac9d94bf196ff40638c1fa80dcb4024a4e)
++++ b/src/reactBasic/ch18/App.js	(date 1649057961573)
+@@ -1,5 +1,5 @@
+ import React from 'react';
+-import CounterContainer from "./containers/CounterContainerV1";
++import CounterContainer from "./containers/CounterContainer";
+ 
+ const App = () => {
+     return (
+Index: src/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\r\nimport ReactDOM from 'react-dom';\r\nimport App from \"./reactBasic/ex01/App\";\r\nimport {createStore} from \"redux\";\r\nimport rootReducer from \"./reactBasic/ex01/modules\";\r\nimport {Provider} from \"react-redux\";\r\n\r\n\r\nconst store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())\r\n\r\nReactDOM.render(\r\n    <React.StrictMode>\r\n        <Provider store={store}>\r\n            <App/>\r\n        </Provider>\r\n    </React.StrictMode>,\r\n    document.getElementById('root')\r\n)\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/index.js b/src/index.js
+--- a/src/index.js	(revision b25ee8ac9d94bf196ff40638c1fa80dcb4024a4e)
++++ b/src/index.js	(date 1649057915585)
+@@ -1,8 +1,8 @@
+ import React from 'react';
+ import ReactDOM from 'react-dom';
+-import App from "./reactBasic/ex01/App";
++import App from "./reactBasic/ch18/App";
+ import {createStore} from "redux";
+-import rootReducer from "./reactBasic/ex01/modules";
++import rootReducer from "./reactBasic/ch18/modules";
+ import {Provider} from "react-redux";
+ 
+ 

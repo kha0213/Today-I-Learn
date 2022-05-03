@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.jdbc.repository.MemberRepositoryV0Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-13T13:47:28" hostname="DESKTOP-8Q25Q0I" time="0.023">
+  <properties/>
+  <testcase name="crud()" classname="hello.jdbc.repository.MemberRepositoryV0Test" time="0.023"/>
+  <system-out><![CDATA[22:47:28.643 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil - get connection=conn36: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:28.647 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil - get connection=conn37: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:28.650 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil - get connection=conn38: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:28.654 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil - get connection=conn39: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:28.656 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil - get connection=conn40: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:28.659 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil - get connection=conn41: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:28.661 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil - get connection=conn42: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

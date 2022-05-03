@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.jdbc.service.MemberServiceV1Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-13T13:47:27" hostname="DESKTOP-8Q25Q0I" time="0.241">
+  <properties/>
+  <testcase name="이체중 예외발생" classname="hello.jdbc.service.MemberServiceV1Test" time="0.207"/>
+  <testcase name="정상이체" classname="hello.jdbc.service.MemberServiceV1Test" time="0.034"/>
+  <system-out><![CDATA[22:47:27.392 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.447 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn0: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.461 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.463 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn1: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.497 [Test worker] INFO hello.jdbc.service.MemberServiceV1 - from=memberA, to=ex, money=2000
+22:47:27.497 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.499 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn2: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.503 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.505 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn3: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.507 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.513 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn4: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.527 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.529 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn5: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.530 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.532 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn6: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.536 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.538 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn7: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.539 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.540 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn8: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.541 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.543 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn9: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.549 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.551 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn10: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.552 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.553 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn11: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.554 [Test worker] INFO hello.jdbc.service.MemberServiceV1 - from=memberA, to=memberB, money=2000
+22:47:27.554 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.556 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn12: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.556 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.558 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn13: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.559 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.561 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn14: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.562 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.564 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn15: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.565 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.567 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn16: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.568 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.571 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn17: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.572 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.574 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn18: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.575 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.577 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn19: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+22:47:27.578 [Test worker] DEBUG org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:h2:tcp://localhost/~/jdbc]
+22:47:27.580 [Test worker] INFO hello.jdbc.repository.MemberRepositoryV1 - get connection! con=conn20: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

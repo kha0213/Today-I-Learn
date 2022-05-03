@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.jdbc.connection.DBConnectionUtilTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-13T13:47:28" hostname="DESKTOP-8Q25Q0I" time="0.004">
+  <properties/>
+  <testcase name="getConnection 테스트" classname="hello.jdbc.connection.DBConnectionUtilTest" time="0.004"/>
+  <system-out><![CDATA[22:47:28.638 [Test worker] INFO hello.jdbc.connection.DBConnectionUtil - get connection=conn35: url=jdbc:h2:tcp://localhost/~/jdbc user=SA, class=class org.h2.jdbc.JdbcConnection
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
