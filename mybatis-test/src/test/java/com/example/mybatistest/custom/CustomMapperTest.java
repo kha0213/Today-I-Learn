@@ -1,8 +1,10 @@
-package com.example.mybatistest.biz;
+package com.example.mybatistest.custom;
 
+import com.example.mybatistest.biz.Users;
 import com.example.mybatistest.config.DBConfigTest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
@@ -13,8 +15,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import java.util.List;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j
@@ -24,38 +24,40 @@ import static org.assertj.core.api.Assertions.assertThat;
 @TestPropertySource(locations = "classpath:test.properties")
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 @MybatisTest
-class UserMapperTest {
+class CustomMapperTest {
 
     @Autowired
-    UserMapper userMapper;
+    CustomMapper mapper;
 
     @Test
-    @DisplayName("유저 등록 테스트")
-    void addUser() throws Exception {
-        Long id = 5L;
-        Users user = new Users(id, "영롱이5");
-        userMapper.addUser(user);
+    @DisplayName("커스텀 유저 테스트")
+    void getUserByName() throws Exception {
+        String name = "테스트3";
+        Users userByName = mapper.getUserByName(name);
 
-        Users findUser = userMapper.getUser(id);
-        log.info("findUser [{}]", findUser);
-        assertThat(findUser.getName()).isEqualTo("영롱이5");
+        log.info("findUser [{}]", userByName);
+        assertThat(userByName.getName()).isEqualTo("테스트3");
     }
 
 
-    @Test
-    @DisplayName("유저 조회 테스트")
-    void getUser() throws Exception {
-        Long id = 2L;
-        Users user = userMapper.getUser(id);
-        assertThat(user.getName()).isEqualTo("영롱이");
-    }
+    @Nested
+    @DisplayName("유저1 테스트")
+    class userTest {
+        @Test
+        @DisplayName("TEST1")
+        void test1() {
 
-    @Test
-    @DisplayName("유저 모두 조회 테스트")
-    void getUserListAll() throws Exception {
-        List<Users> user = userMapper.getUserListAll();
+        }
+        @Test
+        @DisplayName("TEST2")
+        void test2() {
 
-        user.forEach(System.out::println);
+        }
+        @Test
+        @DisplayName("TEST3")
+        void test3() {
+
+        }
     }
 
 

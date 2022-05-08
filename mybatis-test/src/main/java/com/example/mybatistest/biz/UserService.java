@@ -17,6 +17,11 @@ public class UserService {
         return userMapper.getUser(id);
     }
 
+    public List<Users> getUserListAll() throws Exception {
+        log.info("getUserListAll");
+        return userMapper.getUserListAll();
+    }
+
     public Users addUser(Users user) throws Exception {
         log.info("addUser : [{}]", user);
         userMapper.addUser(user);

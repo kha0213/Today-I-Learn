@@ -1,5 +1,6 @@
-package com.example.mybatistest;
+package com.example.mybatistest.config;
 
+import com.example.mybatistest.custom.CustomMapper;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import lombok.RequiredArgsConstructor;
@@ -12,7 +13,6 @@ import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.test.context.TestPropertySource;
 
 import javax.sql.DataSource;
 
@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 @RequiredArgsConstructor
 @PropertySource("classpath:application.properties")
 @MapperScan(value = "com.example.mybatistest.biz")
-public class TestConfig {
+public class DBConfigTest {
     private final ApplicationContext applicationContext;
 
     @Bean
@@ -47,5 +47,12 @@ public class TestConfig {
     @Bean
     public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
         return new SqlSessionTemplate(sqlSessionFactory);
+    }
+    
+    /* Test를 위한 Bean 정의 */
+    @Bean
+    public CustomMapper customMapper() throws Exception {
+        SqlSessionTemplate sqlSessionTemplate = new SqlSessionTemplate(sqlSessionFactory(dataSource()));
+        return sqlSessionTemplate.getMapper(CustomMapper.class);
     }
 }
