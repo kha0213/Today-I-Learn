@@ -4,3 +4,4 @@ out/**
 node_modules/**
 bin/**
 *.class
+**/node_modules/**
