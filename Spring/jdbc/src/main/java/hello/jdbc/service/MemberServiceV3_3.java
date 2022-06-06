@@ -4,9 +4,7 @@ import hello.jdbc.domain.Member;
 import hello.jdbc.repository.MemberRepositoryV3;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.support.DefaultTransactionDefinition;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -16,25 +14,15 @@ import java.sql.SQLException;
  */
 @Slf4j
 @RequiredArgsConstructor
-public class MemberServiceV3_1 {
-    private final PlatformTransactionManager transactionManager;
+public class MemberServiceV3_3 {
     private final MemberRepositoryV3 repository;
 
     /**
-     *
+     * 스프링의 트랜잭션 기능 이용한다.
      */
+    @Transactional
     public void accountTransfer(String fromId, String toId, int money) throws SQLException {
-        TransactionStatus status = transactionManager.getTransaction(new DefaultTransactionDefinition());
-        try {
-            // 비즈니스 s
-            bizLogic(fromId, toId, money);
-            // 비즈니스 e
-            transactionManager.commit(status);
-        } catch (Exception e) {
-            transactionManager.rollback(status);
-            log.error("error", e);
-            throw e;
-        }
+        bizLogic(fromId, toId, money);
     }
 
     private void bizLogic(String fromId, String toId, int money) throws SQLException {

@@ -70,32 +70,6 @@ public class MemberRepositoryV3 {
         }
     }
 
-    public Member findById(Connection conn, String memberId) throws SQLException {
-        String sql = "select * from member where member_id = ?";
-        PreparedStatement pstmt = null;
-        ResultSet rs = null;
-
-        try {
-            pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, memberId);
-            rs = pstmt.executeQuery();
-            if ( rs.next() ) {
-                String id = rs.getString("member_id");
-                int money = rs.getInt("money");
-                return new Member(id, money);
-            } else {
-                throw new NoSuchElementException("Not Found member! memberId = " + memberId);
-            }
-        } catch (SQLException e) {
-            log.error("error:", e);
-            throw e;
-        } finally {
-            close(pstmt, rs);
-        }
-    }
-
-
-
     public void update(String memberId, int changeMoney) throws SQLException {
         String sql = "update Member set money = ? where member_id = ?";
         Connection conn = null;
@@ -115,23 +89,6 @@ public class MemberRepositoryV3 {
         }
     }
 
-    public void update(Connection conn, String memberId, int changeMoney) throws SQLException {
-        String sql = "update Member set money = ? where member_id = ?";
-        PreparedStatement pstmt = null;
-        try {
-            pstmt = conn.prepareStatement(sql);
-            pstmt.setInt(1, changeMoney);
-            pstmt.setString(2, memberId);
-            pstmt.executeUpdate();
-        } catch (SQLException e) {
-            log.error("error:", e);
-            throw e;
-        } finally {
-            JdbcUtils.closeStatement(pstmt);
-        }
-    }
-
-
     public void delete(String memberId) throws SQLException {
         String sql = "delete from Member where member_id = ?";
         Connection conn = null;
@@ -150,10 +107,12 @@ public class MemberRepositoryV3 {
         }
     }
 
+
     private void close(Connection conn, PreparedStatement pstmt, ResultSet rs) {
         JdbcUtils.closeResultSet(rs);
         JdbcUtils.closeStatement(pstmt);
-        JdbcUtils.closeConnection(conn);
+        //JdbcUtils.closeConnection(conn);
+        DataSourceUtils.releaseConnection(conn, dataSource);
     }
     private void close(PreparedStatement pstmt, ResultSet rs) {
         close(null, pstmt, rs);
@@ -163,8 +122,7 @@ public class MemberRepositoryV3 {
     }
 
     private Connection getConnection() throws SQLException {
-        Connection con = dataSource.getConnection();
-
+        Connection con = DataSourceUtils.getConnection(dataSource);
         log.info("get connection! con={}, class={}", con, con.getClass());
         return con;
     }

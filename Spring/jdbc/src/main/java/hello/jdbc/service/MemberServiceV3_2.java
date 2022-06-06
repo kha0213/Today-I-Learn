@@ -5,8 +5,7 @@ import hello.jdbc.repository.MemberRepositoryV3;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.support.DefaultTransactionDefinition;
+import org.springframework.transaction.support.TransactionTemplate;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -16,25 +15,26 @@ import java.sql.SQLException;
  */
 @Slf4j
 @RequiredArgsConstructor
-public class MemberServiceV3_1 {
-    private final PlatformTransactionManager transactionManager;
+public class MemberServiceV3_2 {
+    private final TransactionTemplate template;
     private final MemberRepositoryV3 repository;
 
+    public MemberServiceV3_2(PlatformTransactionManager transactionManager, MemberRepositoryV3 repository) {
+        this.template = new TransactionTemplate(transactionManager);
+        this.repository = repository;
+    }
+
     /**
-     *
+     * 트랜잭션 템플릿을 이용한다.
      */
     public void accountTransfer(String fromId, String toId, int money) throws SQLException {
-        TransactionStatus status = transactionManager.getTransaction(new DefaultTransactionDefinition());
-        try {
-            // 비즈니스 s
-            bizLogic(fromId, toId, money);
-            // 비즈니스 e
-            transactionManager.commit(status);
-        } catch (Exception e) {
-            transactionManager.rollback(status);
-            log.error("error", e);
-            throw e;
-        }
+        template.executeWithoutResult((status) -> {
+            try {
+                bizLogic(fromId, toId, money);
+            } catch (SQLException e) {
+                throw new IllegalStateException(e);
+            }
+        });
     }
 
     private void bizLogic(String fromId, String toId, int money) throws SQLException {
