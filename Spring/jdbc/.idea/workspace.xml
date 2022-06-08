@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d90013fc-ca5d-478a-8e07-ed553114ddd5" name="Changes" comment="스프링 DB 1편 끝">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hello.jdbc.service.MemberServiceV4Test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/hello.jdbc.service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/sql/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hello.jdbc.service.MemberServiceV4Test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/JdbcApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/connection/ConnectionConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/connection/DBConnectionUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/domain/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV4_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV4_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/ex/MyDbDuplicateKeyException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/ex/MyDbException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV3_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV3_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV3_3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/util/TxManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/connection/ConnectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/connection/DBConnectionUtilTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/exception/ExTranslateV1Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/exception/SpringExceptionTranslatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/repository/MemberRepositoryV0Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/repository/MemberRepositoryV1Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV1Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV2Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV3_1Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV3_2Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV3_3Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV4Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jdbc" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="ProjectId" id="27hMaf5wVBlXGpBsCYoiYyQSclH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="code.cleanup.on.save" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="optimize.imports.on.save" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Long\Today-I-Learn\Spring\jdbc\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="hello.jdbc.service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hello.jdbc.repository" />
+      <recent name="hello.jdbc.service" />
+      <recent name="hello.jdbc" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.MemberServiceV4Test">
+    <configuration name="ExTranslatorV1Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;hello.jdbc.exception.ExTranslatorV1Test&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberServiceV3_2Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;hello.jdbc.service.MemberServiceV3_2Test&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberServiceV3_3Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;hello.jdbc.service.MemberServiceV3_3Test&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MemberServiceV4Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;hello.jdbc.service.MemberServiceV4Test&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringExceptionTranslatorTest.sqlExceptionErrorCode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;hello.jdbc.exception.SpringExceptionTranslatorTest.sqlExceptionErrorCode&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="JdbcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jdbc.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.jdbc.JdbcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MemberServiceV4Test" />
+        <item itemvalue="Gradle.SpringExceptionTranslatorTest.sqlExceptionErrorCode" />
+        <item itemvalue="Gradle.ExTranslatorV1Test" />
+        <item itemvalue="Gradle.MemberServiceV3_3Test" />
+        <item itemvalue="Gradle.MemberServiceV3_2Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d90013fc-ca5d-478a-8e07-ed553114ddd5" name="Changes" comment="" />
+      <created>1649767929524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649767929524</updated>
+      <workItem from="1649767931157" duration="310000" />
+      <workItem from="1649768252999" duration="708000" />
+      <workItem from="1649842273124" duration="6004000" />
+      <workItem from="1650806282079" duration="979000" />
+      <workItem from="1651145074124" duration="13000" />
+      <workItem from="1654173840972" duration="1501000" />
+      <workItem from="1654518944104" duration="7395000" />
+      <workItem from="1654582098862" duration="7031000" />
+    </task>
+    <task id="LOCAL-00001" summary="add react">
+      <created>1649768265540</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649768265540</updated>
+    </task>
+    <task id="LOCAL-00002" summary="트랜잭션 공부">
+      <created>1649857918385</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649857918385</updated>
+    </task>
+    <task id="LOCAL-00003" summary="트랜잭션 공부">
+      <created>1654519010906</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654519010906</updated>
+    </task>
+    <task id="LOCAL-00004" summary="스프링 DB 1편 끝">
+      <created>1654602365275</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654602365275</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add react" />
+    <MESSAGE value="트랜잭션 공부" />
+    <MESSAGE value="스프링 DB 1편 끝" />
+    <option name="LAST_COMMIT_MESSAGE" value="스프링 DB 1편 끝" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
