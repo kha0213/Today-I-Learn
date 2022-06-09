@@ -4,27 +4,44 @@ import hello.itemservice.domain.Item;
 import hello.itemservice.repository.ItemRepository;
 import hello.itemservice.repository.ItemSearchCond;
 import hello.itemservice.repository.ItemUpdateDto;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
-import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
 
+import javax.sql.DataSource;
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 @Slf4j
 @Repository
-@RequiredArgsConstructor
-public class JdbcTemplateItemRepository implements ItemRepository {
+public class JdbcTemplateItemRepositoryV1 implements ItemRepository {
     private final JdbcTemplate jdbcTemplate;
+
+    public JdbcTemplateItemRepositoryV1(DataSource dataSource) {
+        this.jdbcTemplate = new JdbcTemplate(dataSource);
+    }
+
     @Override
     public Item save(Item item) {
         String sql = "insert into ITEM (ITEM_NAME, PRICE, QUANTITY) VALUES ( ?, ?, ? )";
-        jdbcTemplate.update(sql, item.getItemName(), item.getPrice(), item.getQuantity());
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        jdbcTemplate.update(connection -> {
+            //자동 증가 키
+            PreparedStatement ps = connection.prepareStatement(sql, new
+                    String[]{"id"});
+            ps.setString(1, item.getItemName());
+            ps.setInt(2, item.getPrice());
+            ps.setInt(3, item.getQuantity());
+            return ps;
+        }, keyHolder);
+        Long key = keyHolder.getKeyAs(Long.class);
+        item.setId(key);
         return item;
     }
 
