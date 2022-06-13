@@ -16,6 +16,5 @@ public interface ItemRepository {
     List<Item> findAll(ItemSearchCond cond);
 
     // 데이터 초기화 위한 테스트 메서드
-    void clear();
 
 }
