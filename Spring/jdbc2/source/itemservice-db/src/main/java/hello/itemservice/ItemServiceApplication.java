@@ -1,13 +1,10 @@
 package hello.itemservice;
 
-import hello.itemservice.config.SpringDataJpaConfig;
-import hello.itemservice.repository.ItemRepository;
+import hello.itemservice.config.V2Config;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.Profile;
 
 
 //@Import(MemoryConfig.class)
@@ -16,7 +13,10 @@ import org.springframework.context.annotation.Profile;
 //@Import(JdbcTemplateConfigV3.class)
 //@Import(MybatisConfig.class)
 //@Import(JpaConfig.class)
-@Import(SpringDataJpaConfig.class)
+//@Import(SpringDataJpaConfig.class)
+//@Import(QueryDslConfig.class)
+@Import(V2Config.class)
+
 @Slf4j
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
@@ -25,9 +25,9 @@ public class ItemServiceApplication {
 		SpringApplication.run(ItemServiceApplication.class, args);
 	}
 
-	@Bean
-	@Profile("local")
-	public TestDataInit testDataInit(ItemRepository itemRepository) {
-		return new TestDataInit(itemRepository);
-	}
+//	@Bean
+//	@Profile("local")
+//	public TestDataInit testDataInit(ItemRepository itemRepository) {
+//		return new TestDataInit(itemRepository);
+//	}
 }
