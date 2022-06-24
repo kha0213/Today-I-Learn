@@ -3,41 +3,35 @@ package com.example.springtxstart.apply;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Slf4j
 @SpringBootTest
-public class AopApplyTest {
+public class InternalCallV1Test {
 
     @Autowired
     BasicService basicService;
 
-
-
     @Test
-    void aopApply() {
-        log.info("aop class {}", basicService.getClass());
-        assertThat(AopUtils.isAopProxy(basicService)).isTrue();
+    void external_call() {
+        boolean active = basicService.externalCallInternal();
+        assertThat(active).isFalse();
     }
 
     @Test
-    void txTest() {
-        basicService.tx();
-        basicService.nonTx();
+    void internal_call() {
+        boolean active = basicService.internal();
+        assertThat(active).isTrue();
     }
 
     @TestConfiguration
-    static class TestConfig {
+    static class config {
         @Bean
         BasicService basicService() {
             return new BasicService();
@@ -45,21 +39,26 @@ public class AopApplyTest {
     }
 
     @Slf4j
+
     static class BasicService {
 
-        @Transactional
-        public void tx() {
-            log.info("call tx");
-            boolean txActive =
-                    TransactionSynchronizationManager.isActualTransactionActive();
-            log.info("tx active={}", txActive);
+        public boolean externalCallInternal() {
+            log.info("external service");
+            return internal();
         }
 
-        public void nonTx() {
-            log.info("call nonTx");
-            boolean txActive =
-                    TransactionSynchronizationManager.isActualTransactionActive();
-            log.info("tx active={}", txActive);
+        @Transactional
+        public boolean internal() {
+            log.info("internal service");
+            return isTransactionActive();
+        }
+
+        private boolean isTransactionActive() {
+            boolean active = TransactionSynchronizationManager.isActualTransactionActive();
+            log.info("active {}", active);
+            return active;
         }
     }
+
 }
+
