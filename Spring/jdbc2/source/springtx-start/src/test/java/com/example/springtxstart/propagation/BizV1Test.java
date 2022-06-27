@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.UnexpectedRollbackException;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -36,5 +37,60 @@ public class BizV1Test {
         // when: 모든 데이터가 정상 저장해야한다.
         assertTrue(memberRepository.findByUsername(username).isPresent());
         assertTrue(logRepository.findByMessage(username).isPresent());
+    }
+
+    /**
+     * memberService    @Transactional on
+     * MemberRepository @Transactional on
+     * LogRepository    @Transactional on
+     */
+    @Test
+    void outer_tx_on_success() {
+        // given
+        String username = "outer_tx_off_success";
+
+        // when
+        memberService.joinV1(username);
+
+        // when: 모든 데이터가 정상 저장해야한다.
+        assertTrue(memberRepository.findByUsername(username).isPresent());
+        assertTrue(logRepository.findByMessage(username).isPresent());
+    }
+
+    /**
+     * memberService    @Transactional on
+     * MemberRepository @Transactional on
+     * LogRepository    @Transactional on (Exception)
+     */
+    @Test
+    void outer_tx_on_fail() {
+        // given
+        String username = "로그예외_outer_tx_on_fail";
+
+        // when
+        org.assertj.core.api.Assertions.assertThatThrownBy(() -> memberService.joinV2(username))
+                .isInstanceOf(UnexpectedRollbackException.class);
+
+        // then: 모든 데이터가 롤백된다
+        assertTrue(memberRepository.findByUsername(username).isEmpty());
+        assertTrue(logRepository.findByMessage(username).isEmpty());
+    }
+
+    /**
+     * memberService    @Transactional on
+     * MemberRepository @Transactional on
+     * LogRepository    @Transactional on (Exception)
+     */
+    @Test
+    void outer_tx_on_fail_require_new() {
+        // given
+        String username = "로그예외_outer_tx_on_fail_require_new";
+
+        // when
+        memberService.joinV2(username);
+
+        // then: 로그만 롤백된다.
+        assertTrue(memberRepository.findByUsername(username).isPresent());
+        assertTrue(logRepository.findByMessage(username).isEmpty());
     }
 }
