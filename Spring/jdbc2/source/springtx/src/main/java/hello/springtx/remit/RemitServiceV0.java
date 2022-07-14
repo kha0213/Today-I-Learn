@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 @Service
-public class RemitService {
+public class RemitServiceV0 {
 
     private final RemitRepository remitRepository;
 

@@ -21,7 +21,7 @@ class MemberServiceTest {
     private MemberRepository repository;
 
     @Autowired
-    private MemberService service;
+    //private MemberService service;
     @Test
     @DisplayName("A -> B 2000원 송금")
     void remit() {
@@ -30,7 +30,7 @@ class MemberServiceTest {
         Member memberB = new Member("B", 10000);
         em.persist(memberB);
 
-        service.remit(memberA.getId(), memberB.getId(),2000);
+        //service.remit(memberA.getId(), memberB.getId(),2000);
         em.flush();
         em.clear();
 
