@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ee9b33b-5e5a-47bc-ac4a-7f84d6c0fd17" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../secu-before/src/main/java/com/example/secubefore/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../secu-before/src/main/java/com/example/secubefore/controller/SecuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../secu-before/src/main/resources/static/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_01_singleton/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_01_singleton/RuntimeExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_01_singleton/Settings1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_01_singleton/Settings2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_01_singleton/Settings3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_01_singleton/Settings4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_01_singleton/Settings5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_01_singleton/SpringConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_01_singleton/SpringExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_01_before/Ship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_01_before/ShipFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_02_after/Blackship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_02_after/BlackshipFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_02_after/DefaultShipFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_02_after/Ship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_02_after/ShipFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_02_after/Whiteship.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_02_after/WhiteshipFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_03_java/CalendarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_03_java/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_03_java/SimpleFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/_03_java/SpringBeanFactoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/pizza/DeluxePizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/pizza/HamMushroomPizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/pizza/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/pizza/Pizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_02_factory_method/pizza/SeafoodPizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_01_before/WhiteAnchor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_01_before/WhiteWheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_01_before/WhiteshipFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_02_after/Anchor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_02_after/ShipInventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_02_after/ShipPartsFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_02_after/Wheel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_02_after/WhiteAnchorPro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_02_after/WhitePartsProFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_02_after/WhiteWheelPro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_02_after/WhiteshipFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_02_after/WhiteshipPartsFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_03_java/DocumentBuilderFactoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_03_java/FactoryBeanConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_03_java/FactoryBeanExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/_03_java/ShipFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/lookAndFeel/IButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/lookAndFeel/IGUIFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/lookAndFeel/OSXButtom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/lookAndFeel/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/lookAndFeel/WinButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_03_abstract_factory/lookAndFeel/WinFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_01_before/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_01_before/DetailPlan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_01_before/TourPlan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_02_after/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_02_after/DefaultTourBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_02_after/TourDirector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_02_after/TourPlanBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_03_java/LombokExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_03_java/SpringExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_03_java/StreamExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/_03_java/StringBuilderExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/user/DefaultUserBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/user/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_04_builder/user/UserBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/_01_before/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/_01_before/GithubIssue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/_01_before/GithubRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/_02_after/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/_02_after/GithubIssue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/_02_after/GithubRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/_03_java/GithubIssueData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/_03_java/JavaCollectionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/_03_java/ModelMapperExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/_03_java/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_01_creational_patterns/_05_prototype/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_01_before/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_01_before/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_01_before/security/LoginHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_01_before/security/UserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_01_before/security/UserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_02_after/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_02_after/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_02_after/AccountUserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_02_after/AccountUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_02_after/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_02_after/security/LoginHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_02_after/security/UserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_02_after/security/UserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_03_java/AdapterInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_03_java/AdapterInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/_03_java/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_06_adapter/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/_01_before/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/_01_before/Champion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/_02_after/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/_02_after/DefaultChampion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/_02_after/KDA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/_02_after/PoolParty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/_02_after/Skin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/_03_java/BridgeInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/_03_java/JdbcExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/_03_java/Slf4jExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_07_bridge/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_08_composite/_01_before/Bag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_08_composite/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_08_composite/_01_before/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_08_composite/_02_after/Bag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_08_composite/_02_after/Character.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_08_composite/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_08_composite/_02_after/Component.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_08_composite/_02_after/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_08_composite/_03_java/SwingExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_08_composite/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_01_before/CommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_01_before/SpamFilteringCommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_01_before/TrimmingCommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_02_after/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_02_after/CommentDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_02_after/CommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_02_after/DefaultCommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_02_after/SpamFilteringCommentDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_02_after/TrimmingCommentDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_03_java/DecoratorInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/_03_java/DecoratorInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_09_decorator/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_10_facade/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_10_facade/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_10_facade/_02_after/EmailMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_10_facade/_02_after/EmailSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_10_facade/_02_after/EmailSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_10_facade/_03_java/FacadeInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_10_facade/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_11_flyweight/_01_before/Character.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_11_flyweight/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_11_flyweight/_02_after/Character.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_11_flyweight/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_11_flyweight/_02_after/Font.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_11_flyweight/_02_after/FontFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_11_flyweight/_03_java/FlyweightInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_11_flyweight/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/_01_before/GameService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/_02_after/DefaultGameService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/_02_after/GameService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/_02_after/GameServiceProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/_03_java/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/_03_java/GameService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/_03_java/PerfAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/_03_java/ProxyInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_02_structural_patterns/_12_proxy/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_01_before/AuthRequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_01_before/LoggingRequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_01_before/Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_01_before/RequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_02_after/AuthRequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_02_after/LoggingRequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_02_after/PrintRequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_02_after/RequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_03_java/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_03_java/CoRInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_03_java/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_03_java/MyFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/_03_java/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_13_chain_of_responsibilities/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_01_before/Button.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_01_before/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_01_before/Light.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_01_before/MyApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_02_after/Button.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_02_after/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_02_after/GameEndCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_02_after/GameStartCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_02_after/LightOffCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_02_after/LightOnCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_02_after/MyApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_03_java/CommandInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/_03_java/CommandInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_14_command/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_01_before/PostfixNotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_02_after/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_02_after/MinusExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_02_after/MultiplyExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_02_after/PlusExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_02_after/PostfixExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_02_after/PostfixParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_02_after/VariableExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_03_java/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_03_java/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_03_java/InterpreterInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_03_java/InterpreterInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/_03_java/MyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_15_interpreter/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_16_iterator/_01_before/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_16_iterator/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_16_iterator/_01_before/Post.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_16_iterator/_02_after/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_16_iterator/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_16_iterator/_02_after/RecentPostIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_16_iterator/_03_java/IteratorInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_16_iterator/_03_java/IteratorInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_16_iterator/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_01_before/CleaningService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_01_before/Guest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_01_before/Gym.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_01_before/Hotel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_01_before/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_02_after/CleaningService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_02_after/FrontDesk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_02_after/Guest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_02_after/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_03_java/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/_03_java/MediatorInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_17_mediator/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_18_memento/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_18_memento/_01_before/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_18_memento/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_18_memento/_02_after/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_18_memento/_02_after/GameSave.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_18_memento/_03_java/MementoInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_18_memento/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_01_before/ChatServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_01_before/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_02_after/ChatServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_02_after/Subscriber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_02_after/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_03_java/FlowInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_03_java/MyEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_03_java/MyEventListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_03_java/MyRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_03_java/ObserverInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_03_java/ObserverInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/_03_java/PropertyChangeExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_19_observer/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/_01_before/OnlineCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/_01_before/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/_02_after/Draft.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/_02_after/OnlineCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/_02_after/Private.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/_02_after/Published.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/_02_after/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/_02_after/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_20_state/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/_01_before/BlueLightRedLight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/_02_after/BlueLightRedLight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/_02_after/Faster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/_02_after/Fastest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/_02_after/Normal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/_02_after/Speed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/_03_java/StrategyInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/_03_java/StrategyInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_21_strategy/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_01_before/FileProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_01_before/MultuplyFileProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_02_after/FileProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_02_after/Multiply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_02_after/Operator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_02_after/Plus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_03_java/MyHello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_03_java/TemplateInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/_03_java/TemplateInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_22_template/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_01_before/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_01_before/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_01_before/Device.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_01_before/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_01_before/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_01_before/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_01_before/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_01_before/Watch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_02_after/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_02_after/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_02_after/Device.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_02_after/Pad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_02_after/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_02_after/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_02_after/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_02_after/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_02_after/Watch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_03_java/SearchFileVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_03_java/VisitorInJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/_03_java/VisitorInSpring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/_23_visitor/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DesignPatterns/src/main/java/com/example/design/_03_behavioral_patterns/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../secu/src/main/java/com/study/secu/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../secu/src/main/java/com/study/secu/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../secu/src/main/java/com/study/secu/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../secu/src/main/java/com/study/secu/controller/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../secu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../secu/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DTjCx9F4hHmrswtOPGuM8AhQsp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="DesignPatternsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="designPatterns.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.designPatterns.DesignPatternsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ee9b33b-5e5a-47bc-ac4a-7f84d6c0fd17" name="Changes" comment="" />
+      <created>1660729844556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660729844556</updated>
+      <workItem from="1660729846096" duration="143000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
