@@ -9,7 +9,9 @@ import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.core.job.CompositeJobParametersValidator;
 import org.springframework.batch.core.job.DefaultJobParametersValidator;
+import org.springframework.batch.core.listener.JobListenerFactoryBean;
 import org.springframework.batch.core.step.tasklet.Tasklet;
+import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -31,18 +33,55 @@ public class BatchConfiguration {
     public Job job() {
         return this.jobBuilderFactory.get("basicJob")
                 .start(step1())
+                .next(step2())
                 // .validator(validator()) validator 사용
                 //.incrementer(new RunIdIncrementer()) // 자동 증가하는 ID
                 .incrementer(new DailyJobTimestamper()) // 자동 증가하는 ID
+                .listener(JobListenerFactoryBean.getListener(new JobLoggerListener()))
                 .build();
     }
 
-    private Step step1() {
-        return this.stepBuilderFactory.get("step1")
-                .tasklet(getTaskletWithParam()).build();
+    private Step step2() {
+        return stepBuilderFactory.get("step2")
+                .tasklet((contribution, chunkContext) -> {
+                    /** 잡의 Execution Context 가져오기 같은 Job에서 실행되는 Step이면 같은 Context리턴 */
+                    ExecutionContext jobExecutionContext = chunkContext.getStepContext()
+                            .getStepExecution()
+                            .getJobExecution()
+                            .getExecutionContext();
+
+                    /** 스텝의 Execution Context 가져오기 (Step 마다 생성되는 Context) */
+                    ExecutionContext stepExecutionContext = chunkContext.getStepContext()
+                            .getStepExecution()
+                            .getExecutionContext();
+                    log.info("=== step2 job Context: [{}]", jobExecutionContext); //같은 job이면 step1의 context와 동일
+                    log.info("=== step2 step Context: [{}]", stepExecutionContext); // 같은 job이어도 step마다 생성되는 context임
+                    return RepeatStatus.FINISHED;
+                }).build();
     }
 
-    private static Tasklet getTaskletWithParam() {
+    private Step step1() {
+        return stepBuilderFactory.get("step1")
+                .tasklet((contribution, chunkContext) -> {
+                    /** 잡의 Execution Context 가져오기 */
+                    ExecutionContext jobExecutionContext = chunkContext.getStepContext()
+                            .getStepExecution()
+                            .getJobExecution()
+                            .getExecutionContext();
+                    jobExecutionContext.put("name", "job Execution Context");
+
+                    /** 스텝의 Execution Context 가져오기 (Job과 다름) */
+                    ExecutionContext stepExecutionContext = chunkContext.getStepContext()
+                            .getStepExecution()
+                            .getExecutionContext();
+                    stepExecutionContext.put("name2", "step Execution Context");
+                    log.info("=== step1 job Context: [{}]", jobExecutionContext);
+                    log.info("=== step1 step Context: [{}]", stepExecutionContext);
+                    return RepeatStatus.FINISHED;
+                }).build();
+    }
+
+    private Tasklet getTaskletWithParam() {
         return (contribution, chunkContext) -> {
             log.info("hello contribution : [{}] chunkContext : [{}]", contribution, chunkContext);
             // parameter 주고 넘기기
