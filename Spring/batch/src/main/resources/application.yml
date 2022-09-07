@@ -14,9 +14,9 @@ spring:
       mode: always
   batch:
     jdbc:
-      initialize-schema: always
-#logging:
-#  level:
-#    jdbc:
-#      sqlonly: info
+      initialize-schema: never
+logging:
+  level:
+    log4jdbc: error
+
 
