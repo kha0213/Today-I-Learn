@@ -4,7 +4,7 @@ spring:
     username: sa
     password:
     #driver-class-name: org.h2.Driver
-    url: jdbc:log4jdbc:h2:mem:test
+    url: jdbc:log4jdbc:h2:tcp://localhost/~/test
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
   h2:
     console:
@@ -12,9 +12,11 @@ spring:
   sql:
     init:
       mode: always
-logging:
-  level:
+  batch:
     jdbc:
-      resultsettable: info
-      sqlonly: info
+      initialize-schema: always
+#logging:
+#  level:
+#    jdbc:
+#      sqlonly: info
 
