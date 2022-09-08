@@ -1,5 +1,6 @@
 package com.example.batch.config;
 
+import com.example.batch.external.ExternalService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParametersValidator;
@@ -10,6 +11,7 @@ import org.springframework.batch.core.configuration.annotation.StepBuilderFactor
 import org.springframework.batch.core.job.CompositeJobParametersValidator;
 import org.springframework.batch.core.job.DefaultJobParametersValidator;
 import org.springframework.batch.core.listener.JobListenerFactoryBean;
+import org.springframework.batch.core.step.tasklet.MethodInvokingTaskletAdapter;
 import org.springframework.batch.core.step.tasklet.Tasklet;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.repeat.RepeatStatus;
@@ -34,10 +36,19 @@ public class BatchConfiguration {
         return this.jobBuilderFactory.get("basicJob")
                 .start(step1())
                 .next(step2())
+                .next(methodInvokingStep())
+                .next(methodInvokingStep())
                 // .validator(validator()) validator 사용
                 //.incrementer(new RunIdIncrementer()) // 자동 증가하는 ID
                 .incrementer(new DailyJobTimestamper()) // 자동 증가하는 ID
                 .listener(JobListenerFactoryBean.getListener(new JobLoggerListener()))
+                .build();
+    }
+
+    @Bean
+    public Job methodInvokingJob() {
+        return jobBuilderFactory.get("methodInvokingJob")
+                .start(methodInvokingStep())
                 .build();
     }
 
@@ -120,5 +131,30 @@ public class BatchConfiguration {
         validator.setValidators(Arrays.asList(new ParameterValidator(), defaultJobParametersValidator));
 
         return validator;
+    }
+
+    public Step methodInvokingStep() {
+        return stepBuilderFactory.get("methodInvokingStep")
+                .tasklet(methodInvokingTasklet())
+                .build();
+    }
+
+    /**
+     * 외부 서비스
+     */
+    @Bean
+    public ExternalService externalService() {
+        return new ExternalService();
+    }
+
+    @Bean
+    public MethodInvokingTaskletAdapter methodInvokingTasklet() {
+        MethodInvokingTaskletAdapter methodInvokingTaskletAdapter =
+                new MethodInvokingTaskletAdapter();
+
+        methodInvokingTaskletAdapter.setTargetObject(externalService());
+        methodInvokingTaskletAdapter.setTargetMethod("serviceMethodWithNoParameter");
+
+        return methodInvokingTaskletAdapter;
     }
 }
