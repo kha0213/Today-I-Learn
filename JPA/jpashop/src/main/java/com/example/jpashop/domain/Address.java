@@ -1,18 +1,17 @@
 package com.example.jpashop.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Embeddable;
+
+import static lombok.AccessLevel.PROTECTED;
 
 /**
  * value type
  */
 @Getter
 @AllArgsConstructor
-@NoArgsConstructor
+@NoArgsConstructor(access = PROTECTED)
 @Embeddable
 public class Address {
     private String city;

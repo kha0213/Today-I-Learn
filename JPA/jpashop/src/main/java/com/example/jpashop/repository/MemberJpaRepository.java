@@ -29,14 +29,14 @@ public class MemberJpaRepository implements MemberRepository {
     @Override
     public List<Member> findAll() {
         String sql = "select m from Member m";
-        return em.createQuery(sql)
+        return em.createQuery(sql, Member.class)
                 .getResultList();
     }
 
     @Override
     public List<Member> findByName(String name) {
         String sql = "select m from Member m where m.name = :name";
-        return em.createQuery(sql)
+        return em.createQuery(sql, Member.class)
                 .setParameter("name", name)
                 .getResultList();
     }
