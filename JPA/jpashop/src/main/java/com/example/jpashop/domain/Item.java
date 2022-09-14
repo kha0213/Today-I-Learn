@@ -19,10 +19,20 @@ public abstract class Item extends BaseEntity {
     @Column(name="item_id")
     private Long id;
     private String name;
-    private Integer price;
-    private Integer stockQuantity;
-
+    private int price;
+    private int stockQuantity;
     @ManyToMany(mappedBy = "items")
     private List<Category> categories = new ArrayList<>();
+
+    public void addStock(int quantity) {
+        stockQuantity += quantity;
+    }
+
+    public void removeStock(int quantity) {
+        int restStock = stockQuantity - quantity;
+        if( restStock < 0 ) {
+
+        }
+    }
 
 }
