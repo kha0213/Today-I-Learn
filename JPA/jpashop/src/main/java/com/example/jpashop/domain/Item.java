@@ -1,5 +1,6 @@
 package com.example.jpashop.domain;
 
+import com.example.jpashop.exception.NotEnoughStockException;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -31,8 +32,9 @@ public abstract class Item extends BaseEntity {
     public void removeStock(int quantity) {
         int restStock = stockQuantity - quantity;
         if( restStock < 0 ) {
-
+            throw new NotEnoughStockException("need more stock");
         }
+        this.stockQuantity = restStock;
     }
 
 }
