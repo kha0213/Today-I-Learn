@@ -22,7 +22,21 @@ public class OrderRepository {
     }
 
     public List<Order> findAll(OrderSearch orderSearch) {
-        //TODO:
-        return null;
+        String jpql = "select o from Order o join o.member m" +
+                " where 1=1 " +
+                " ";
+        // 주문 상태 검색
+        if (orderSearch.getOrderStatus() != null) {
+            jpql += "and o.status = '" + orderSearch.getOrderStatus() + "'";
+        }
+        // 이름 검색
+        if (orderSearch.getMemberName() != null) {
+            jpql += "and o.member.name like '%" + orderSearch.getOrderStatus() + "%'";
+        }
+        return em.createQuery(
+                jpql
+                ,Order.class)
+                .setMaxResults(1000)
+                .getResultList();
     }
 }

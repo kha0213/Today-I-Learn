@@ -23,7 +23,8 @@ public class MemberController {
     }
 
     @GetMapping("/members/new")
-    public String joinView() {
+    public String joinView(Model model) {
+        model.addAttribute("memberForm", new Member());
         return "members/createMemberForm";
     }
 
