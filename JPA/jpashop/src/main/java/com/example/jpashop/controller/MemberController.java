@@ -2,6 +2,7 @@ package com.example.jpashop.controller;
 
 import com.example.jpashop.domain.Member;
 import com.example.jpashop.service.MemberService;
+import com.example.jpashop.vo.MemberForm;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,17 +24,17 @@ public class MemberController {
     }
 
     @GetMapping("/members/new")
-    public String joinView(Model model) {
-        model.addAttribute("memberForm", new Member());
+    public String createForm(Model model) {
+        model.addAttribute("memberForm", new MemberForm());
         return "members/createMemberForm";
     }
 
     @PostMapping("/members/new")
-    public String join(@Valid Member member, BindingResult result) {
+    public String join(@Valid MemberForm member, BindingResult result) {
         if (result.hasErrors()) {
             return "members/createMemberForm";
         }
-        memberService.join(member);
+        memberService.join(new Member(member));
         return "redirect:/members";
     }
 }

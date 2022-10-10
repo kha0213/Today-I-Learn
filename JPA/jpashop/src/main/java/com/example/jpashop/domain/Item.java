@@ -36,5 +36,4 @@ public abstract class Item extends BaseEntity {
         }
         this.stockQuantity = restStock;
     }
-
 }

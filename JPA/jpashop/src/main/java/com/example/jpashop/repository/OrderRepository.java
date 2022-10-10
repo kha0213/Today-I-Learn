@@ -4,6 +4,7 @@ import com.example.jpashop.domain.Order;
 import com.example.jpashop.vo.OrderSearch;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
+import org.springframework.util.StringUtils;
 
 import javax.persistence.EntityManager;
 import java.util.List;
@@ -23,15 +24,14 @@ public class OrderRepository {
 
     public List<Order> findAll(OrderSearch orderSearch) {
         String jpql = "select o from Order o join o.member m" +
-                " where 1=1 " +
-                " ";
+                " where 1=1 ";
         // 주문 상태 검색
         if (orderSearch.getOrderStatus() != null) {
-            jpql += "and o.status = '" + orderSearch.getOrderStatus() + "'";
+            jpql += " and o.status = '" + orderSearch.getOrderStatus() + "'";
         }
         // 이름 검색
-        if (orderSearch.getMemberName() != null) {
-            jpql += "and o.member.name like '%" + orderSearch.getOrderStatus() + "%'";
+        if (StringUtils.hasText(orderSearch.getMemberName())) {
+            jpql += " and o.member.name like '%" + orderSearch.getMemberName() + "%'";
         }
         return em.createQuery(
                 jpql

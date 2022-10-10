@@ -1,6 +1,8 @@
 package com.example.jpashop.domain;
 
+import com.example.jpashop.vo.MemberForm;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
@@ -12,6 +14,7 @@ import java.util.List;
 @Getter
 @ToString
 @Setter
+@NoArgsConstructor
 public class Member extends BaseEntity {
     @Id
     @GeneratedValue
@@ -26,4 +29,10 @@ public class Member extends BaseEntity {
     @ToString.Exclude
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
+
+    public Member(MemberForm memberForm) {
+        this.address =
+                new Address(memberForm.getCity(), memberForm.getStreet(), memberForm.getZipcode());
+        this.name = memberForm.getName();
+    }
 }
