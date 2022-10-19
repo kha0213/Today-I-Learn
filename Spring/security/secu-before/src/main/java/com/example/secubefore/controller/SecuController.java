@@ -12,7 +12,7 @@ public class SecuController {
     @GetMapping("/")
     public String index() {
         log.info("/");
-        return "home";
+        return "basic home";
     }
 
     @GetMapping("/home")
@@ -24,12 +24,30 @@ public class SecuController {
     @GetMapping("/login")
     public String login() {
         log.info("login get");
-        return "login";
+        return "login Get";
     }
 
     @PostMapping("/login")
     public String loginPost() {
         log.info("login post");
-        return "login";
+        return "login Post";
+    }
+
+    @PostMapping("/logout")
+    public String logoutPost() {
+        log.info("logout post");
+        return "logout Post";
+    }
+
+    @GetMapping("/expired")
+    public String expired() {
+        log.info("[GET] expired");
+        return "expired";
+    }
+
+    @GetMapping("/invalid")
+    public String expirinvalided() {
+        log.info("[GET] invalid");
+        return "invalid";
     }
 }
