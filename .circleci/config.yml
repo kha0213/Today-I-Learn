@@ -24,3 +24,8 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      - docker:
+          requires:
+            filters:
+              branches:
+                only: master
