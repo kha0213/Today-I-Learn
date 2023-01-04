@@ -3,7 +3,7 @@ package lambda;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class Lambda1BasicTest {
+public class Ex01_Lambda1BasicTest {
     interface Something {
         void doSomething();
     }
@@ -18,15 +18,18 @@ public class Lambda1BasicTest {
     @Test
     @DisplayName("시작")
     void first() {
-        // 첫 번째 익명클래스
-        Something something1 = new Something() {
+        /** 구현체 */
+        Something something1 = new DoSomething();
+
+        /** 익명클래스 */
+        Something something2 = new Something() {
             @Override
             public void doSomething() {
                 System.out.println("익명클래스");
             }
         };
-        // 두 번째 구현체 (기존에 가장 많이 사용하는 방법)
-        Something something2 = new DoSomething();
+
+        /** 람다 */
         Something something3 = () -> System.out.println("람다!! 만세");
 
         something1.doSomething();

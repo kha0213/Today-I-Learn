@@ -3,13 +3,9 @@ package lambda;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.function.BiFunction;
-import java.util.function.BinaryOperator;
-import java.util.function.Function;
 
-public class Lambda2BasicTest {
+public class Ex01_Lambda2BasicTest {
 
     @Test
     @DisplayName("함수도 파라미터로 넘길 수 있다.")
