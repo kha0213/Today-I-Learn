@@ -1,4 +1,4 @@
-package com.example.mvcseminar.controller;
+package com.example.controller;
 
 import com.example.mvcseminar.entity.User;
 import lombok.RequiredArgsConstructor;
