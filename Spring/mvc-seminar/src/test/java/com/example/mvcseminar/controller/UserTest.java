@@ -20,11 +20,15 @@ import java.net.URISyntaxException;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class UserTest {
     private final UserRequestDto successUser =
             new UserRequestDto(1L,"name", "M","loginId", "kyl0327@greencar.co.kr");
 
     private final UserRequestDto failUser =
+            new UserRequestDto(1L,"error유저", "MALE","kyl0327@greencar.co.kr", "kyl0327@greencar.co.kr");
+
+    private final UserRequestDto validFailUser =
             new UserRequestDto(1L,"", "MALE","kyl0327@greencar.co.kr", "kyl0327@greencar.co.kr");
 
     TestRestTemplate restTemplate;
@@ -124,11 +128,21 @@ public class UserTest {
     }
 
     @Test
-    @DisplayName("/v3/user 요청 실패유저 테스트")
-    void requestV4_fail() {
+    @DisplayName("/v3/user 요청 비정상 유저 실패 테스트")
+    void requestV4_error_fail() {
         // when
         ResponseEntity<User> res =
                 restTemplate.postForEntity("/v3/user", failUser, User.class);
+        // then
+        assertThat(res.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
+    }
+
+    @Test
+    @DisplayName("/v3/user 요청 유효성 검사 실패 테스트")
+    void requestV4_fail() {
+        // when
+        ResponseEntity<User> res =
+                restTemplate.postForEntity("/v3/user", validFailUser, User.class);
         // then
         assertThat(res.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
     }
