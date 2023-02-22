@@ -1,17 +1,26 @@
 package com.example.springbasic;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
+import java.util.Map;
+
 @SpringBootApplication
 public class SpringBasicApplication {
+    @Autowired
+    private ApplicationContext ac;
 
     public static void main(String[] args) {
+//        SpringApplication.run(SpringBasicApplication.class, args);
         SpringApplication application = new SpringApplication(SpringBasicApplication.class);
         application.setWebApplicationType(WebApplicationType.NONE);
         application.run(args);
@@ -30,6 +39,8 @@ public class SpringBasicApplication {
     @EventListener(ApplicationReadyEvent.class)
     public void init() {
         System.out.println("ApplicationReadyEvent start");
+        Map<String, Object> beansWithAnnotation = ac.getBeansWithAnnotation(Bean.class);
+        //System.out.println("beansWithAnnotation = " + beansWithAnnotation);
     }
 
 }

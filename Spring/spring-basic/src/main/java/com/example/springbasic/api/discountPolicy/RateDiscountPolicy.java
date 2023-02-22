@@ -1,4 +1,6 @@
-package com.example.springbasic.api;
+package com.example.springbasic.api.discountPolicy;
 
-public class RateDiscountPolicy implements DisCountPolicy {
+import com.example.springbasic.api.discountPolicy.DiscountPolicy;
+
+public class RateDiscountPolicy implements DiscountPolicy {
 }

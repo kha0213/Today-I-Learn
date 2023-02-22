@@ -1,4 +1,4 @@
-package com.example.springbasic.api;
+package com.example.springbasic.api.discountPolicy;
 
-public interface DisCountPolicy {
+public interface DiscountPolicy {
 }

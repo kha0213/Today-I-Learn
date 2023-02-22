@@ -1,4 +1,4 @@
 package com.example.springbasic.api;
 
-public interface MemberRepository {
+public class MemberRepositoryImpl implements MemberRepository {
 }

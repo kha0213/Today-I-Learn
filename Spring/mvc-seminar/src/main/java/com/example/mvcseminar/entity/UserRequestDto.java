@@ -1,6 +1,10 @@
 package com.example.mvcseminar.entity;
 
-import jakarta.validation.constraints.*;
+import com.example.mvcseminar.entity.Gender;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,20 +12,15 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class UserRequestDto {
     @Positive
     Long userId;
     @NotBlank
     String name;
     @Pattern(regexp = "[MF]")
-    Gender gender;
+    String gender;
 
     String loginId;
     @Email
     String email;
-
-    public static User of(UserRequestDto dto) {
-        return new User(dto.getUserId(), dto.getName(),
-                Gender.of(dto.getGender()), dto.getLoginId(), dto.getEmail());
-    }
 }

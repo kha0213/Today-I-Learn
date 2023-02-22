@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import static java.util.Comparator.comparingInt;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class Ex01_Lambda3BasicTest {
@@ -15,13 +14,8 @@ public class Ex01_Lambda3BasicTest {
 
     @Data
     static class Customer {
-        private String name;
-        private int age;
-
-        public Customer(String name, int age) {
-            this.name = name;
-            this.age = age;
-        }
+        private final String name;
+        private final int age;
     }
     @Test
     @DisplayName("람다는 익명함수를 거의 대체 가능하다. (this나 Exception 등 제외)")
@@ -52,16 +46,19 @@ public class Ex01_Lambda3BasicTest {
         Arrays.sort(customers1, getComparator());
 
         // 익명함수
-        Arrays.sort(customers2, (o1, o2) -> {
-            if (o1.age != o2.age) {
-                return Integer.compare(o1.age, o2.age);
+        Arrays.sort(customers2, new Comparator<Customer>() {
+            @Override
+            public int compare(Customer o1, Customer o2) {
+                if (o1.age != o2.age) {
+                    return Integer.compare(o1.age, o2.age);
+                }
+                return o1.name.compareTo(o2.name);
             }
-            return o1.name.compareTo(o2.name);
         });
 
         // 1.8 이후 정렬
         Arrays.sort(customers3,
-                comparingInt(Customer::getAge)
+                Comparator.comparingInt(Customer::getAge)
                 .thenComparing(Customer::getName));
 
 

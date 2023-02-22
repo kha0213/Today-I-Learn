@@ -1,2 +1,4 @@
-package com.example.springbasic.api;public interface OrderService {
+package com.example.springbasic.api;
+
+public interface OrderService {
 }

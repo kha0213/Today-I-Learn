@@ -18,6 +18,7 @@ public class Ex01_Lambda2BasicTest {
         System.out.println("cal3 : " + cal3);
         int cal4 = cal(10, 5, (Integer x, Integer y) -> x / y);
         System.out.println("cal4 : " + cal4);
+
     }
 
     /**

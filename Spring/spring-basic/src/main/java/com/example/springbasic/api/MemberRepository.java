@@ -1,2 +1,4 @@
-package com.example.springbasic.api;public interface MemberRepository {
+package com.example.springbasic.api;
+
+public interface MemberRepository {
 }
