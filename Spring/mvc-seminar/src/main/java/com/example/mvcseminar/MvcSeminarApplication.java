@@ -1,19 +1,17 @@
 package com.example.mvcseminar;
 
-import com.example.spring.UserControllerV0;
+import com.example.spring.v0.UserControllerV0;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionEvaluationReport;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
-
 @SpringBootApplication
-@Import(UserControllerV0.class)
+@ComponentScan(basePackageClasses = {UserControllerV0.class, MvcSeminarApplication.class})
 public class MvcSeminarApplication {
 
 
