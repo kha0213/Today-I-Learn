@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class RequestTest {
     @Test
-    @DisplayName("/v1/user 요청 테스트")
+    @DisplayName("hello 테스트")
     void requestV1() {
         // given
         RestTemplateBuilder restTemplateBuilder = new RestTemplateBuilder().rootUri("http://localhost:8080");

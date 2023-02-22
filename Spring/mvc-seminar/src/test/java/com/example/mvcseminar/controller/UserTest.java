@@ -36,13 +36,14 @@ public class UserTest {
     }
 
     @Test
-    @DisplayName("/v1/user 요청 테스트")
-    void requestV1() {
+    @DisplayName("/v0/user 요청 테스트")
+    void requestV0() {
         // given
-        UriComponents uri = UriComponentsBuilder.fromUriString("/v1/user")
+        UriComponents uri = UriComponentsBuilder.fromUriString("/v0/user")
                 .queryParam("userId", successUser.getUserId())
                 .queryParam("name", successUser.getName())
                 .queryParam("gender", successUser.getGender())
+                .queryParam("loginId", successUser.getLoginId())
                 .queryParam("email", successUser.getEmail())
                 .build();
 
@@ -57,6 +58,34 @@ public class UserTest {
         assertThat(user.getUserId()).isEqualTo(successUser.getUserId());
         assertThat(user.getName()).isEqualTo(successUser.getName());
         assertThat(user.getEmail()).isEqualTo(successUser.getEmail());
+        assertThat(user.getLoginId()).isEqualTo(successUser.getLoginId());
+        assertThat(user.getGender()).isEqualTo(Gender.of(successUser.getGender()));
+    }
+
+    @Test
+    @DisplayName("/v1/user 요청 테스트")
+    void requestV1() {
+        // given
+        UriComponents uri = UriComponentsBuilder.fromUriString("/v1/user")
+                .queryParam("userId", successUser.getUserId())
+                .queryParam("name", successUser.getName())
+                .queryParam("gender", successUser.getGender())
+                .queryParam("loginId", successUser.getLoginId())
+                .queryParam("email", successUser.getEmail())
+                .build();
+
+        // when
+        ResponseEntity<User> res =
+                restTemplate.postForEntity(uri.toUri(), null, User.class);
+
+        // then
+        assertThat(res.getStatusCode()).isEqualTo(HttpStatus.OK);
+        User user = res.getBody();
+        assert user != null;
+        assertThat(user.getUserId()).isEqualTo(successUser.getUserId());
+        assertThat(user.getName()).isEqualTo(successUser.getName());
+        assertThat(user.getEmail()).isEqualTo(successUser.getEmail());
+        assertThat(user.getLoginId()).isEqualTo(successUser.getLoginId());
         assertThat(user.getGender()).isEqualTo(Gender.of(successUser.getGender()));
     }
 
@@ -90,6 +119,7 @@ public class UserTest {
         assertThat(user.getUserId()).isEqualTo(successUser.getUserId());
         assertThat(user.getName()).isEqualTo(successUser.getName());
         assertThat(user.getEmail()).isEqualTo(successUser.getEmail());
+        assertThat(user.getLoginId()).isEqualTo(successUser.getLoginId());
         assertThat(user.getGender()).isEqualTo(Gender.of(successUser.getGender()));
     }
 

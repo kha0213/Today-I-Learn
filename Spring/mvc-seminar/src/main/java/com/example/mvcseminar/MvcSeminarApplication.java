@@ -1,21 +1,16 @@
 package com.example.mvcseminar;
 
-import com.example.spring.UserController;
+import com.example.spring.UserControllerV0;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionEvaluationReport;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
-import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
-import java.util.Map;
-
 @SpringBootApplication
-@Import(UserController.class)
+@Import(UserControllerV0.class)
 public class MvcSeminarApplication {
 
 
