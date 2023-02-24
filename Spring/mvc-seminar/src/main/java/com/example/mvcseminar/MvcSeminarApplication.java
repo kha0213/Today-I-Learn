@@ -1,19 +1,23 @@
 package com.example.mvcseminar;
 
-import com.example.spring.v0.UserControllerV0;
+import com.example.spring.v0.OrderControllerV0;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionEvaluationReport;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
-@SpringBootApplication
-@ComponentScan(basePackageClasses = {UserControllerV0.class, MvcSeminarApplication.class})
-public class MvcSeminarApplication {
+import java.util.Arrays;
 
+@SpringBootApplication
+@RequiredArgsConstructor
+@ComponentScan(basePackageClasses = {OrderControllerV0.class, MvcSeminarApplication.class})
+public class MvcSeminarApplication {
 
     @Component
     @RequiredArgsConstructor
@@ -34,7 +38,19 @@ public class MvcSeminarApplication {
                         System.out.println();
                     }).count();
             System.out.println(count);
+
+            Arrays.stream(ac.getBeanDefinitionNames())
+                    .filter(name -> name.contains("andler"))
+                    .forEach(System.out::println);
         }
+
+
+    }
+
+    @EventListener(ApplicationReadyEvent.class)
+    public void ready() {
+
+        System.out.println("MvcSeminarApplication.ready");
     }
 
     public static void main(String[] args) {
