@@ -2,13 +2,18 @@ package com.example.mvcseminar;
 
 import com.example.spring.v0.UserControllerV0;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionEvaluationReport;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
+
+import java.util.Arrays;
 
 @SpringBootApplication
 @ComponentScan(basePackageClasses = {UserControllerV0.class, MvcSeminarApplication.class})
@@ -35,6 +40,18 @@ public class MvcSeminarApplication {
                     }).count();
             System.out.println(count);
         }
+    }
+
+    @Autowired
+    private ApplicationContext ac;
+    @EventListener(ApplicationReadyEvent.class)
+    public void onReady(ApplicationReadyEvent event) {
+        System.out.println("MvcSeminarApplication.onReady");
+        Arrays.stream(ac.getBeanDefinitionNames())
+                .filter(name -> name.contains("httpService")
+                || name.contains("argumentResolver"))
+                .forEach(System.out::println);
+
     }
 
     public static void main(String[] args) {

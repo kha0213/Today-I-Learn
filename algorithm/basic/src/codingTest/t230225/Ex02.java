@@ -1,40 +1,74 @@
 package codingTest.t230225;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Calendar;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Ex01 {
+public class Ex02 {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+//        int leave = 3;
+//        String day = "SUN";
+//        int[] holidays = {2, 6, 17, 29};
+        int leave = 4;
+        String day = "FRI";
+        int[] holidays = {6, 21, 23, 27, 28};
+        System.out.println(new Ex02().solution(leave, day, holidays));
+
     }
 
-    public int[] solution(String[] approved, String[] spams, String[] calls, int k) {
-        Set<String> spamSet = Arrays.stream(spams).collect(Collectors.toSet());
-        Set<String> approvedSet = Arrays.stream(approved).collect(Collectors.toSet());
-        Map<String, Integer> checkMap = new HashMap<>();
+    public int solution(int leave, String day, int[] holidays) {
+        Set<Integer> holidaySet = Arrays.stream(holidays)
+                .boxed()
+                .collect(Collectors.toSet());
+        int firstDayOfWeek = getDayOfWeek(day);
 
-        List<Integer> result = new ArrayList<>();
+        Queue<Integer> queue = new LinkedList<>();
+        int answer = 0;
+        int useLeave = 0;
 
-        for (String call : calls) {
-            if(spamSet.contains(call)) {
-                result.add(1);
-            } else if (approvedSet.contains(call)) {
-                result.add(0);
-            } else {
-                Integer callCnt = checkMap.getOrDefault(call, 0);
-                if (callCnt < k) {
-                    result.add(1);
-                    checkMap.put(call, callCnt+1);
-                } else {
-                    result.add(0);
-                }
+        int vacationStartDay = 1;
+        for (int i = 1; i <= 30; i++) {
+            if (isOffDay(i, holidaySet, firstDayOfWeek)) {
+                continue;
+            }
+
+            if (useLeave < leave) {
+                useLeave++;
+                queue.add(i);
+            } else if (useLeave == leave) {
+                answer = Math.max(answer, i - vacationStartDay);
+                int poll = queue.poll();
+                vacationStartDay = poll + 1;
+                queue.add(i);
             }
         }
-        return result.stream().mapToInt(i->i).toArray();
+
+        answer = Math.max(answer, 31 - vacationStartDay);
+        return useLeave < leave ? 30 : answer;
+    }
+
+    private boolean isOffDay(int today, Set<Integer> holidays, int firstDayOfWeek) {
+        if(holidays.contains(today)) {
+            return true;
+        }
+        int day = (today + firstDayOfWeek) % 7;
+        return day == 0 || day == 1;
+    }
+
+    public int getDayOfWeek(String day) {
+        return switch (day) {
+            case "MON" -> 1;
+            case "TUE" -> 2;
+            case "WED" -> 3;
+            case "THU" -> 4;
+            case "FRI" -> 5;
+            case "SAT" -> 6;
+            case "SUN" -> 7;
+            default -> -1;
+        };
     }
 }
