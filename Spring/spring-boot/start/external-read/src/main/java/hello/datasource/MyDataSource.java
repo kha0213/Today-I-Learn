@@ -22,7 +22,7 @@ public class MyDataSource {
 
     @PostConstruct
     public void init() {
-        log.info("MyDataSource initialized with url: {}, username: {}, password: {}, maxConnection: {}, timeout: {}, options: {}",
+        log.info("MyDataSource initialized with \nurl: {}, \nusername: {}, \npassword: {}, \nmaxConnection: {}, \ntimeout: {}, \noptions: {}",
                 url, username, password, maxConnection, timeout, options);
     }
 }

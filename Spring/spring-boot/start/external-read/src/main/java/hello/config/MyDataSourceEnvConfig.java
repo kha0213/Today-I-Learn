@@ -13,7 +13,7 @@ import java.util.List;
 @Slf4j
 @RequiredArgsConstructor
 @Configuration
-public class MyDataSourceConfig {
+public class MyDataSourceEnvConfig {
     private final Environment env;
 
     @Bean
