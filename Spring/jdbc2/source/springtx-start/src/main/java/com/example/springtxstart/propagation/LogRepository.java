@@ -15,15 +15,18 @@ import java.util.Optional;
 public class LogRepository {
     private final EntityManager em;
 
+
+
+
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void save(Log logMessage) {
         log.info("로그 저장");
         em.persist(logMessage);
 
-        if (logMessage.getMessage().contains("로그예외")) {
-            log.info("로그 저장시 예외 발생");
-            throw new RuntimeException("로그예외발생");
-        }
+//        if (logMessage.getMessage().contains("로그예외")) {
+//            log.info("로그 저장시 예외 발생");
+//            throw new RuntimeException("로그예외발생");
+//        }
     }
 
     public Optional<Log> findByMessage(String message) {

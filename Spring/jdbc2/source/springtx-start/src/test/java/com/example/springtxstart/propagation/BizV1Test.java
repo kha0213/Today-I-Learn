@@ -2,12 +2,14 @@ package com.example.springtxstart.propagation;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.UnexpectedRollbackException;
 import org.springframework.transaction.annotation.Transactional;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Slf4j
@@ -92,5 +94,19 @@ public class BizV1Test {
         // then: 로그만 롤백된다.
         assertTrue(memberRepository.findByUsername(username).isPresent());
         assertTrue(logRepository.findByMessage(username).isEmpty());
+    }
+
+    @Test
+    @DisplayName("Require_New에 대해 테스트")
+    void require_new_test() {
+        // given
+        String username = "로그예외";
+
+        // when
+        assertThrows(Exception.class, () -> memberService.joinV3(username));
+        //memberService.joinV3(username);
+        // then: 로그만 롤백된다.
+        assertTrue(logRepository.findByMessage(username).isPresent());
+        //assertTrue(memberRepository.findByUsername(username).isPresent());
     }
 }

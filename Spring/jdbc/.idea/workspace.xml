@@ -4,95 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d90013fc-ca5d-478a-8e07-ed553114ddd5" name="Changes" comment="스프링 DB 1편 끝">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hello.jdbc.service.MemberServiceV4Test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/hello.jdbc.service.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/sql/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-hello.jdbc.service.MemberServiceV4Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/JdbcApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/connection/ConnectionConst.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/connection/DBConnectionUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/domain/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV4_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV4_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/MemberRepositoryV5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/ex/MyDbDuplicateKeyException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/repository/ex/MyDbException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV3_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV3_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV3_3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/service/MemberServiceV4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/jdbc/util/TxManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/connection/ConnectionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/connection/DBConnectionUtilTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/exception/ExTranslateV1Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/exception/SpringExceptionTranslatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/repository/MemberRepositoryV0Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/repository/MemberRepositoryV1Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV1Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV2Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV3_1Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV3_2Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV3_3Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/jdbc/service/MemberServiceV4Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="d90013fc-ca5d-478a-8e07-ed553114ddd5" name="Changes" comment="스프링 DB 1편 끝" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,6 +12,9 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -159,26 +74,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="h2" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="code.cleanup.on.save" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="optimize.imports.on.save" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/g00345/Long/Today-I-Learn/Spring/jdbc",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Long\Today-I-Learn\Spring\jdbc\src\main\resources" />
@@ -334,6 +238,7 @@
       <workItem from="1654173840972" duration="1501000" />
       <workItem from="1654518944104" duration="7395000" />
       <workItem from="1654582098862" duration="7031000" />
+      <workItem from="1679988540014" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="add react">
       <created>1649768265540</created>
@@ -379,7 +284,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add react" />
