@@ -1,8 +1,12 @@
 package com.example.rxstart.study;
 
+import com.example.rxstart.common.Car;
+import com.example.rxstart.common.CarMaker;
+import com.example.rxstart.common.SampleData;
 import com.example.rxstart.util.Logger;
 import com.example.rxstart.util.TimeUtil;
 import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.observables.GroupedObservable;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Mono;
@@ -88,5 +92,18 @@ public class DataExchangeTest {
                 .switchMap(name -> Observable.interval(80L, TimeUnit.MILLISECONDS).take(3))
                 .subscribe(Logger::log, Logger::log, () -> System.out.println("# switchMap end"));
         TimeUtil.sleep(5000L);
+    }
+
+    @Test
+    @DisplayName("groupBy : 데이터를 그룹으로 묶는다.")
+    void groupByTest() {
+        Observable<GroupedObservable<CarMaker, Car>> observable
+                = Observable.fromIterable(SampleData.carList).groupBy(Car::getCarMaker);
+
+        observable.subscribe(
+            carMaker -> carMaker.subscribe(
+                    car -> Logger.log(carMaker.getKey() + " : " + car.getCarName())
+            )
+        );
     }
 }
