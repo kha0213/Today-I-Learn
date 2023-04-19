@@ -7,8 +7,8 @@ management:
     shutdown:
       enabled: true
     health:
-      show-components: always
-      # show-details: always
+      # show-components: always
+      show-details: always
   info:
     java:
       enabled: true
@@ -24,3 +24,8 @@ info:
   app:
     name: hello-actuator
     company: younglong
+
+logging:
+  level:
+    hello:
+      controller: debug
