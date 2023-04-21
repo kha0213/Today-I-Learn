@@ -12,4 +12,10 @@ public class HomeController {
     public String home() {
         return "home";
     }
+
+    @GetMapping("/api/cs/na/qna")
+    public String home2(PageRequest pageRequest) {
+        log.info("pageRequest={}", pageRequest);
+        return "home";
+    }
 }

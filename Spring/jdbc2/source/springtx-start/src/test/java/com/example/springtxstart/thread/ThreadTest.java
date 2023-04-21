@@ -1,8 +1,6 @@
 package com.example.springtxstart.thread;
 
-import com.zaxxer.hikari.HikariPoolMXBean;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,14 +9,10 @@ import org.springframework.context.annotation.Import;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.management.JMX;
-import javax.management.MBeanServer;
-import javax.management.MalformedObjectNameException;
-import javax.management.ObjectName;
-import java.lang.management.ManagementFactory;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
@@ -26,8 +20,6 @@ import java.util.stream.Collectors;
 @Import(ThreadTest.QueryService.class)
 @Slf4j
 public class ThreadTest {
-
-    HikariPoolMXBean poolProxy;
 
     /** 차종 ID */
     List<Integer> carIds = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
@@ -38,19 +30,15 @@ public class ThreadTest {
         /** 요금 계산 쿼리가 1초 걸린다 가정 */
         public int cal(int carId) {
             try {
-                Thread.sleep(1000);
+                Random r = new Random();
+                int nextInt = r.nextInt(10000);
+                System.out.println("nextInt = " + nextInt + " carId : " + carId);
+                Thread.sleep(nextInt);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
             return carId * 1000;
         }
-    }
-
-    @BeforeEach
-    void setUp() throws MalformedObjectNameException {
-        MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
-        ObjectName poolName = new ObjectName("com.zaxxer.hikari:type=Pool HikariPool-1");
-        poolProxy = JMX.newMXBeanProxy(mBeanServer, poolName, HikariPoolMXBean.class);
     }
 
     @Autowired
@@ -122,5 +110,6 @@ public class ThreadTest {
         return carIds.parallelStream()
                 .map(queryService::cal)
                 .collect(Collectors.toList());
+
     }
 }
