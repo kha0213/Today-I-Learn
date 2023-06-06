@@ -26,3 +26,24 @@ print(len(python))
 print(python.replace('Ama', 'Pro'))
 print(python.index('i'))
 
+name = 'Henny'
+name2 = name.replace('H','P')
+name3 = 'Z' + name[1:]
+print('name:' + name + ' name2:' + name2 + ' name3:' + name3) # Henny
+
+print(f'Henny의 len():{len("Henny")}')
+print(f'mask,cat,dog의 split(\',\'):{"mask,cat,dog".split(",")}')
+print(f'   mask     의 stlip():{"   mask     ".strip()}')
+print(f'ab!@#의 stlip(\'!@#\'):{"ab!@#".strip("!@#")}')
+
+poem = '''All that doth flow we cannot liquid name
+Or else would fire and water be the same;
+But that is liquid which is moist and wet
+Fire that property can never get.
+Then ’tis not cold that puts the fire3 out
+But ’tis the wet that makes it die, no doubt.'''
+
+print(poem[:13])
+print(len(poem))
+print(poem.startswith('All'))
+print(poem.endswith('doubt'))
