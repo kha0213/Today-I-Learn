@@ -29,3 +29,9 @@ logging:
   level:
     hello:
       controller: debug
+
+# 톰캣 메트릭정보 추가로 활성화
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true

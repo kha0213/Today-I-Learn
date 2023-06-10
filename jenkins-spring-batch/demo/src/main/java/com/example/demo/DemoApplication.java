@@ -15,5 +15,4 @@ public class DemoApplication {
         log.info("exit = {}", exit);
         System.exit(exit);
     }
-
 }
