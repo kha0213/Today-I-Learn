@@ -19,6 +19,9 @@ dependencies {
     implementation("org.apache.kafka:kafka-clients:3.5.1")
     implementation("org.slf4j:slf4j-api:2.0.7")
     implementation("org.slf4j:slf4j-simple:2.0.7")
+    // https://mvnrepository.com/artifact/com.github.javafaker/javafaker
+    implementation("com.github.javafaker:javafaker:1.0.2")
+
 }
 
 tasks.withType<Test> {
