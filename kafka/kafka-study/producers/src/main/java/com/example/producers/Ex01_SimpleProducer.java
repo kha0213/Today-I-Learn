@@ -3,18 +3,11 @@ package com.example.producers;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.serialization.StringSerializer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Properties;
-import java.util.concurrent.ExecutionException;
 
-public class SimpleProducerSync {
-    public static final Logger LOGGER = LoggerFactory.getLogger(SimpleProducerSync.class);
+public class Ex01_SimpleProducer {
     public static void main(String[] args) {
         String topicName = "simple-topic";
 
@@ -31,19 +24,7 @@ public class SimpleProducerSync {
         ProducerRecord<String, String> producerRecord = new ProducerRecord<>(topicName, "hello world3");
 
         // KafkaProducer message send
-        try {
-            RecordMetadata recordMetadata = kafkaProducer.send(producerRecord).get();
-            LOGGER.info("\n ###### record metadata received ###### \n" +
-                    "partition: " + recordMetadata.partition() + "\n" +
-                    "offset: " + recordMetadata.offset() + "\n" +
-                    "timestamp: " + recordMetadata.timestamp()
-            );
-
-        } catch (InterruptedException | ExecutionException e) {
-            e.printStackTrace();
-        } finally {
-            kafkaProducer.close();
-        }
+        kafkaProducer.send(producerRecord);
 
         kafkaProducer.flush();
         kafkaProducer.close();

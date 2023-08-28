@@ -1,6 +1,5 @@
 package com.example.producers;
 
-import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -12,8 +11,8 @@ import org.slf4j.LoggerFactory;
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 
-public class SimpleProducerASync {
-    public static final Logger LOGGER = LoggerFactory.getLogger(SimpleProducerASync.class);
+public class Ex02_SimpleProducerSync {
+    public static final Logger LOGGER = LoggerFactory.getLogger(Ex02_SimpleProducerSync.class);
     public static void main(String[] args) {
         String topicName = "simple-topic";
 
@@ -30,25 +29,18 @@ public class SimpleProducerASync {
         ProducerRecord<String, String> producerRecord = new ProducerRecord<>(topicName, "hello world3");
 
         // KafkaProducer message send
-        kafkaProducer.send(producerRecord, new Callback() {
-            @Override
-            public void onCompletion(RecordMetadata metadata, Exception exception) {
-                if (exception == null) {
-                    LOGGER.info("\n ###### record metadata received ###### \n" +
-                            "partition: " + metadata.partition() + "\n" +
-                            "offset: " + metadata.offset() + "\n" +
-                            "timestamp: " + metadata.timestamp()
-                    );
-                } else {
-                    LOGGER.error("exception error from broker " + exception.getMessage());
-                }
-            }
-        });
-
         try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
+            RecordMetadata recordMetadata = kafkaProducer.send(producerRecord).get();
+            LOGGER.info("\n ###### record metadata received ###### \n" +
+                    "partition: " + recordMetadata.partition() + "\n" +
+                    "offset: " + recordMetadata.offset() + "\n" +
+                    "timestamp: " + recordMetadata.timestamp()
+            );
+
+        } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
+        } finally {
+            kafkaProducer.close();
         }
 
         kafkaProducer.flush();
