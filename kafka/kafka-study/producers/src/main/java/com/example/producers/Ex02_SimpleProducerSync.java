@@ -11,6 +11,8 @@ import org.slf4j.LoggerFactory;
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 
+import static com.example.producers.config.KafkaConfig.SERVER_PORT;
+
 public class Ex02_SimpleProducerSync {
     public static final Logger LOGGER = LoggerFactory.getLogger(Ex02_SimpleProducerSync.class);
     public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class Ex02_SimpleProducerSync {
 
         //kafkaProducer configuration settings
         Properties properties = new Properties();
-        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.56.101:9092");
+        properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, SERVER_PORT);
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
