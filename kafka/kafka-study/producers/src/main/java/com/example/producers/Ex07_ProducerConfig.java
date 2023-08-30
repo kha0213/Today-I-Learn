@@ -97,6 +97,16 @@ public class Ex07_ProducerConfig {
 
         //ACKS_CONFIG 기본은 all (-1)
         properties.put(ProducerConfig.ACKS_CONFIG, "0");
+        // batch size 한 배치당 가질 수 있는 크기
+        properties.put(ProducerConfig.BATCH_SIZE_CONFIG, 16384);
+        // 메모리 accumulator 가 가질 수 있는 크기
+        properties.put(ProducerConfig.BUFFER_MEMORY_CONFIG, 33554432);
+        // 커넥션마다 배치사이즈를 보낼 수 있는 최대 갯수
+        properties.put(ProducerConfig.MAX_IN_FLIGHT_REQUESTS_PER_CONNECTION, 5);
+        // default 0, 얼만큼 기다렸다가 매치를 갔다 올건지.
+        properties.put(ProducerConfig.LINGER_MS_CONFIG, 20);
+        //
+        properties.put(ProducerConfig.MAX_REQUEST_SIZE_CONFIG, 1048576);
 
         // kafkaProducer instance
         KafkaProducer<String, String> kafkaProducer = new KafkaProducer<>(properties);
