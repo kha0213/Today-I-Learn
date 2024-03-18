@@ -1,0 +1,2 @@
+class Lec5Main {
+}
